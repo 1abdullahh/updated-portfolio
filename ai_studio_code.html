@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarav Singh — Digital Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-page: #ffffff;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f8f9fc;
+      --bg-input: #f7f8fa;
+      --border-light: #e8ebf2;
+      --border-card: #eaedf4;
+      --text-primary: #11131a;
+      --text-secondary: #5a6072;
+      --text-muted: #8a90a2;
+      --accent-purple: #7c5cff;
+      --accent-blue: #6384ff;
+      --accent-gradient: linear-gradient(90deg, #8b5cf6 0%, #6384ff 100%);
+      --btn-dark: #0f1117;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 22px;
+      --radius-pill: 9999px;
+      --shadow-card: 0 2px 12px rgba(17, 19, 26, 0.03);
+      --shadow-float: 0 8px 24px rgba(17, 19, 26, 0.06);
+      --container-max: 1120px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-block {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      margin-bottom: 20px;
+      background: var(--bg-surface);
+    }
+
+    .eyebrow {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-purple);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--text-primary);
+    }
+
+    /* ================= HEADER ================= */
+    .site-header {
+      padding: 18px 0;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-pill);
+      padding: 10px 16px;
+      background: var(--bg-surface);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--btn-dark);
+      color: #ffffff;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-primary);
+    }
+
+    .brand-role {
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+      background: var(--bg-subtle);
+    }
+
+    .nav-links a.active {
+      color: var(--text-primary);
+      font-weight: 600;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+    }
+
+    .btn-talk {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-pill);
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-talk:hover {
+      background: var(--bg-subtle);
+      border-color: #d5dae6;
+    }
+
+    /* ================= HERO SECTION ================= */
+    .hero-section {
+      padding: 48px 44px 36px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-name {
+      font-size: 50px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 18px;
+    }
+
+    .hero-desc {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      max-width: 410px;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 42px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--btn-dark);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 22px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--btn-dark);
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 22px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-light);
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-subtle);
+    }
+
+    .trusted-by-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .trusted-logos {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      color: #8c93a4;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .trusted-logo-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0.85;
+    }
+
+    /* Hero Right Visual */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 360px;
+    }
+
+    .portrait-frame {
+      width: 310px;
+      height: 340px;
+      border-radius: 32px 32px 110px 32px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-subtle);
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+    }
+
+    .float-badge-exp {
+      position: absolute;
+      top: 10px;
+      right: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      text-align: center;
+      box-shadow: var(--shadow-float);
+    }
+
+    .float-badge-exp .num {
+      display: block;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .float-badge-exp .label {
+      font-size: 10px;
+      color: var(--text-muted);
+      line-height: 1.25;
+      display: block;
+    }
+
+    .float-badge-sparkle {
+      position: absolute;
+      bottom: 66px;
+      left: 16px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow-float);
+      color: var(--accent-purple);
+    }
+
+    .float-badge-impact {
+      position: absolute;
+      bottom: 12px;
+      right: 0;
+      width: 170px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      box-shadow: var(--shadow-float);
+    }
+
+    .float-badge-impact .title {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .float-badge-impact .metric {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    /* ================= ABOUT SECTION ================= */
+    .about-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 26px;
+    }
+
+    .about-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      padding-top: 22px;
+    }
+
+    .about-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      gap: 16px;
+      background: var(--bg-subtle);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-surface);
+      display: grid;
+      place-items: center;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .about-cta-wrap {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .btn-outline-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-pill);
+      transition: background 0.2s ease;
+    }
+
+    .btn-outline-pill:hover {
+      background: var(--bg-subtle);
+    }
+
+    /* ================= SERVICES SECTION ================= */
+    .section-header {
+      margin-bottom: 24px;
+    }
+
+    .section-header-flex {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      padding: 22px 20px;
+      background: var(--bg-surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 205px;
+      box-shadow: var(--shadow-card);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .service-card:hover {
+      border-color: #d4daea;
+      transform: translateY(-2px);
+    }
+
+    .service-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+    }
+
+    .icon-amber { background: #fef3c7; color: #d97706; }
+    .icon-purple { background: #ede9fe; color: #7c3aed; }
+    .icon-blue { background: #dbeafe; color: #2563eb; }
+    .icon-teal { background: #ccfbf1; color: #0d9488; }
+
+    .service-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    .card-arrow {
+      display: flex;
+      justify-content: flex-end;
+      color: var(--text-primary);
+    }
+
+    /* ================= TOOLS & SKILLS ================= */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 12px;
+    }
+
+    .tool-card {
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 16px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--bg-surface);
+      transition: border-color 0.2s ease;
+    }
+
+    .tool-card:hover {
+      border-color: #cfd6e6;
+    }
+
+    .tool-badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .tool-name {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    /* ================= SELECTED WORK ================= */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .project-card {
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-surface);
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      border-color: #d4daea;
+    }
+
+    .project-thumb {
+      height: 170px;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-light);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      overflow: hidden;
+    }
+
+    /* Mini UI Mockups inside Project Thumbnails */
+    .mini-phone {
+      width: 68px;
+      height: 132px;
+      background: #ffffff;
+      border: 1px solid #e2e6f0;
+      border-radius: 10px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .mini-phone.dark {
+      background: #6d6aff;
+      border-color: #6d6aff;
+    }
+
+    .mini-bar {
+      height: 6px;
+      border-radius: 4px;
+      background: #e9ecf4;
+    }
+
+    .mini-bar.short { width: 60%; }
+    .mini-bar.accent { background: #7c5cff; }
+    .mini-box {
+      flex: 1;
+      border-radius: 6px;
+      background: #f3f5fa;
+    }
+    .mini-phone.dark .mini-bar { background: rgba(255,255,255,0.45); }
+    .mini-phone.dark .mini-box { background: rgba(255,255,255,0.2); }
+
+    .mini-browser {
+      width: 100%;
+      height: 132px;
+      background: #ffffff;
+      border: 1px solid #e2e6f0;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .mini-browser-dots {
+      display: flex;
+      gap: 4px;
+    }
+
+    .mini-browser-dots span {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #d8dde8;
+    }
+
+    .mini-dash-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 8px;
+      flex: 1;
+    }
+
+    .mini-panel {
+      background: #f4f6fb;
+      border-radius: 6px;
+      padding: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .project-info {
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .project-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+    }
+
+    .project-cat {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .project-link-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--border-light);
+      display: grid;
+      place-items: center;
+      color: var(--text-primary);
+    }
+
+    /* ================= DESIGN PROCESS ================= */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      position: relative;
+    }
+
+    .process-card {
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      padding: 18px 16px;
+      background: var(--bg-surface);
+      position: relative;
+    }
+
+    .process-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .process-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: #f3f0ff;
+      color: var(--accent-purple);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .process-num {
+      font-size: 16px;
+      font-weight: 700;
+      color: #c7ccda;
+    }
+
+    .process-card h3 {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .process-card p {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ================= TESTIMONIALS ================= */
+    .testimonials-wrap {
+      position: relative;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .testimonial-card {
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      background: var(--bg-surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 165px;
+      position: relative;
+    }
+
+    .quote-mark {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+      color: #e4e7f2;
+    }
+
+    .testimonial-quote {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding-right: 18px;
+      margin-bottom: 18px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .author-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #eef1f7;
+      border: 1px solid var(--border-light);
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-primary);
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.25;
+    }
+
+    .author-role {
+      font-size: 10.5px;
+      color: var(--text-muted);
+    }
+
+    .slider-controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .slider-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border-light);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .slider-btn:hover {
+      background: var(--bg-subtle);
+      color: var(--text-primary);
+    }
+
+    /* ================= CONTACT SECTION ================= */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-heading {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+    }
+
+    .contact-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-subtle);
+      display: grid;
+      place-items: center;
+      color: var(--text-primary);
+      flex-shrink: 0;
+    }
+
+    .contact-copyright {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .contact-form-card {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      background: var(--bg-surface);
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .form-field {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+      padding: 11px 14px;
+      font-size: 12.5px;
+      color: var(--text-primary);
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-field::placeholder {
+      color: var(--text-muted);
+    }
+
+    .form-field:focus {
+      border-color: var(--accent-purple);
+      background: #ffffff;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    textarea.form-field {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--btn-dark);
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-submit:hover {
+      opacity: 0.92;
+    }
+
+    .form-feedback {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #0d9488;
+      display: none;
+      text-align: center;
+    }
+
+    /* ================= FOOTER ================= */
+    .site-footer {
+      padding: 18px 0 36px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 14px 24px;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+      }
+      .hero-section,
+      .about-top,
+      .about-bottom,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .projects-grid,
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section-block {
+        padding: 24px 20px;
+      }
+      .hero-section {
+        padding: 28px 20px;
+      }
+      .hero-name {
+        font-size: 36px;
+      }
+      .hero-subtitle {
+        font-size: 22px;
+      }
+      .services-grid,
+      .projects-grid,
+      .testimonials-grid,
+      .process-grid,
+      .form-row-2 {
+        grid-template-columns: 1fr;
+      }
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary Navigation">
+        <a href="#home" class="brand">
+          <div class="brand-logo">A</div>
+          <div class="brand-text">
+            <span class="brand-name">Aarav Singh</span>
+            <span class="brand-role">Digital Product Designer</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-talk">
+          Let's Talk
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="section-block hero-section">
+      <div class="hero-content">
+        <span class="eyebrow">HELLO, I'M</span>
+        <h1 class="hero-name">Aarav Singh</h1>
+        <h2 class="hero-subtitle">Digital Product Designer</h2>
+        <p class="hero-desc">
+          I craft meaningful digital experiences that are intuitive, beautiful and built with purpose.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#work" class="btn-primary">
+            View My Work
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a href="#about" class="btn-secondary">
+            Download CV
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="trusted-by">
+          <div class="trusted-by-label">Trusted by</div>
+          <div class="trusted-logos">
+            <span class="trusted-logo-item">Google</span>
+            <span class="trusted-logo-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg>
+              Microsoft
+            </span>
+            <span class="trusted-logo-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-2.8 5.2-6 9.6-6 13a6 6 0 0 0 12 0c0-3.4-3.2-7.8-6-13z"/></svg>
+              airbnb
+            </span>
+            <span class="trusted-logo-item">HubSpot</span>
+            <span class="trusted-logo-item" style="font-style: italic;">dribbble</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame" aria-label="Portrait of Aarav Singh">
+          <!-- Clean inline SVG portrait placeholder -->
+          <svg width="240" height="300" viewBox="0 0 240 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Shoulders / Shirt -->
+            <path d="M30 300C30 238 70 212 120 212C170 212 210 238 210 300H30Z" fill="#E6E4DF"/>
+            <path d="M88 214L120 264L152 214" fill="#FFFFFF"/>
+            <!-- Neck -->
+            <rect x="102" y="172" width="36" height="46" rx="14" fill="#D8A98E"/>
+            <!-- Head -->
+            <rect x="74" y="76" width="92" height="110" rx="44" fill="#E3B59A"/>
+            <!-- Hair -->
+            <path d="M72 115C68 74 92 48 124 48C156 48 174 72 168 112C162 94 148 84 122 84C96 84 82 95 72 115Z" fill="#1F222A"/>
+            <!-- Beard -->
+            <path d="M76 138C76 168 96 186 120 186C144 186 164 168 164 138C154 152 140 160 120 160C100 160 86 152 76 138Z" fill="#2A2D36" opacity="0.85"/>
+            <!-- Glasses -->
+            <rect x="84" y="114" width="30" height="20" rx="6" stroke="#22252D" stroke-width="2.5" fill="rgba(255,255,255,0.2)"/>
+            <rect x="126" y="114" width="30" height="20" rx="6" stroke="#22252D" stroke-width="2.5" fill="rgba(255,255,255,0.2)"/>
+            <line x1="114" y1="122" x2="126" y2="122" stroke="#22252D" stroke-width="2.5"/>
+          </svg>
+        </div>
+
+        <div class="float-badge-exp">
+          <span class="num">5+</span>
+          <span class="label">Years of<br>Experience</span>
+        </div>
+
+        <div class="float-badge-sparkle" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg>
+        </div>
+
+        <div class="float-badge-impact">
+          <div class="title">Design Impact</div>
+          <div class="metric">+120%</div>
+          <svg width="100%" height="26" viewBox="0 0 140 26" fill="none">
+            <path d="M2 22 L28 18 L52 20 L80 12 L106 14 L138 3" stroke="#6384FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section-block">
+      <div class="about-top">
+        <div>
+          <span class="eyebrow">ABOUT ME</span>
+          <h2 class="section-title">Designing with Empathy<br>Building with Purpose</h2>
+        </div>
+        <p class="about-desc">
+          I'm a digital product designer with 5+ years of experience turning complex problems into simple, intuitive and engaging experiences. I believe in user-centered design, clean aesthetics and thoughtful details.
+        </p>
+      </div>
+
+      <div class="about-bottom">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <span class="stat-value">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <span class="stat-value">30+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span class="stat-value">15+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+
+        <div class="about-cta-wrap">
+          <a href="#work" class="btn-outline-pill">
+            More About Me
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section-block">
+      <div class="section-header">
+        <span class="eyebrow">WHAT I DO</span>
+        <h2 class="section-title">Services I Offer</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-amber">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6v6H9z"/></svg>
+            </div>
+            <h3>Product Design</h3>
+            <p>Designing intuitive and engaging user interfaces for web and mobile products.</p>
+          </div>
+          <div class="card-arrow">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-purple">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating seamless user experiences through research, wireframing and prototyping.</p>
+          </div>
+          <div class="card-arrow">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3>Design Systems</h3>
+            <p>Building scalable design systems and component libraries for consistent experiences.</p>
+          </div>
+          <div class="card-arrow">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-teal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>User Research</h3>
+            <p>Understanding users deeply through research and data to inform better design.</p>
+          </div>
+          <div class="card-arrow">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOOLS & SKILLS SECTION -->
+    <section class="section-block">
+      <div class="section-header">
+        <span class="eyebrow">TOOLS &amp; SKILLS</span>
+        <h2 class="section-title">Technologies I Use</h2>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#f3e8ff; color:#9333ea;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="14.5" cy="12" r="2.5"/><path d="M9.5 4.5A2.5 2.5 0 0 0 9.5 9.5H12V4.5H9.5zM12 4.5V9.5H14.5A2.5 2.5 0 0 0 14.5 4.5H12zM9.5 9.5A2.5 2.5 0 0 0 9.5 14.5H12V9.5H9.5zM9.5 14.5A2.5 2.5 0 1 0 12 17V14.5H9.5z"/></svg>
+          </div>
+          <span class="tool-name">Figma</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#fef3c7; color:#d97706;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 3 21 9 12 21 3 9"/></svg>
+          </div>
+          <span class="tool-name">Sketch</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#470137; color:#ff61f6;">Xd</div>
+          <span class="tool-name">Adobe XD</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#001e36; color:#31a8ff;">Ps</div>
+          <span class="tool-name">Photoshop</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#330000; color:#ff9a00;">Ai</div>
+          <span class="tool-name">Illustrator</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#146ef5; color:#ffffff;">W</div>
+          <span class="tool-name">Webflow</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#11131a; color:#ffffff;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4h14v7h-7L5 4zm0 7h7l7 7H5v-7zm0 7h7v5l-7-5z"/></svg>
+          </div>
+          <span class="tool-name">Framer</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#f4f5f7; color:#11131a; border:1px solid #d5d9e2;">N</div>
+          <span class="tool-name">Notion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="work" class="section-block">
+      <div class="section-header-flex">
+        <div>
+          <span class="eyebrow">FEATURED PROJECTS</span>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+        <a href="#work" class="btn-outline-pill">
+          View All Projects
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="mini-phone">
+              <div class="mini-bar short"></div>
+              <div class="mini-bar accent"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone dark">
+              <div class="mini-bar short"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone">
+              <div class="mini-bar"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar short accent"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Finova – Finance App</h3>
+              <span class="project-cat">Mobile App Design</span>
+            </div>
+            <a href="#work" class="project-link-btn" aria-label="View Finova Project">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="mini-browser">
+              <div class="mini-browser-dots"><span></span><span></span><span></span></div>
+              <div class="mini-dash-grid">
+                <div class="mini-panel">
+                  <div class="mini-bar accent"></div>
+                  <div class="mini-bar short"></div>
+                  <div class="mini-bar"></div>
+                  <div class="mini-bar short"></div>
+                </div>
+                <div class="mini-panel">
+                  <div class="mini-bar short"></div>
+                  <div class="mini-box" style="background:#e8ecfb;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <span class="project-cat">Web Application</span>
+            </div>
+            <a href="#work" class="project-link-btn" aria-label="View Analytics Dashboard Project">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <div class="mini-browser">
+              <div class="mini-browser-dots"><span></span><span></span><span></span></div>
+              <div class="mini-dash-grid" style="grid-template-columns: 1.2fr 1fr;">
+                <div class="mini-panel">
+                  <div class="mini-bar"></div>
+                  <div class="mini-bar short"></div>
+                  <div class="mini-bar accent short"></div>
+                </div>
+                <div class="mini-panel" style="background:#e9ecfb;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Saas Landing Page</h3>
+              <span class="project-cat">Web Design</span>
+            </div>
+            <a href="#work" class="project-link-btn" aria-label="View Saas Landing Page Project">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DESIGN PROCESS SECTION -->
+    <section id="process" class="section-block">
+      <div class="section-header">
+        <span class="eyebrow">MY PROCESS</span>
+        <h2 class="section-title">Design Process I Follow</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-top">
+            <div class="process-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <span class="process-num">01</span>
+          </div>
+          <h3>Discover</h3>
+          <p>Understanding user needs and project goals.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-top">
+            <div class="process-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <span class="process-num">02</span>
+          </div>
+          <h3>Define</h3>
+          <p>Research, analyze and define the problem.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-top">
+            <div class="process-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.7.6 1 1.3 1 2.3h6c0-1 .3-1.7 1-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <span class="process-num">03</span>
+          </div>
+          <h3>Ideate</h3>
+          <p>Brainstorm and create wireframes &amp; concepts.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-top">
+            <div class="process-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+            </div>
+            <span class="process-num">04</span>
+          </div>
+          <h3>Design</h3>
+          <p>Crafting clean, intuitive and engaging user interfaces.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-top">
+            <div class="process-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="process-num">05</span>
+          </div>
+          <h3>Test &amp; Iterate</h3>
+          <p>Testing with users and refining for the best experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section-block testimonials-wrap">
+      <div class="section-header-flex">
+        <div>
+          <span class="eyebrow">TESTIMONIALS</span>
+          <h2 class="section-title">What Clients Say</h2>
+        </div>
+        <div class="slider-controls">
+          <button type="button" class="slider-btn" id="prevTestimonial" aria-label="Previous testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button type="button" class="slider-btn" id="nextTestimonial" aria-label="Next testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <article class="testimonial-card">
+          <span class="quote-mark" aria-hidden="true">”</span>
+          <p class="testimonial-quote">
+            "Aarav is an exceptional designer. He understands user needs deeply and delivers outstanding results on every project."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div>
+              <div class="author-name">Rohit Sharma</div>
+              <div class="author-role">Product Manager, Google</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="quote-mark" aria-hidden="true">”</span>
+          <p class="testimonial-quote">
+            "Working with Aarav was a smooth and inspiring experience. His attention to detail is truly impressive."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">NV</div>
+            <div>
+              <div class="author-name">Neha Verma</div>
+              <div class="author-role">Design Lead, Microsoft</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <span class="quote-mark" aria-hidden="true">”</span>
+          <p class="testimonial-quote">
+            "Aarav's designs not only look amazing but also solve real user problems. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KM</div>
+            <div>
+              <div class="author-name">Karan Malhotra</div>
+              <div class="author-role">Founder, StartupX</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT / LET'S CONNECT SECTION -->
+    <section id="contact" class="section-block">
+      <div class="contact-grid">
+        <div>
+          <span class="eyebrow">LET'S CONNECT</span>
+          <h2 class="contact-heading">Have a project in mind?<br>Let's create something amazing<br>together.</h2>
+
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <span class="contact-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              hello@aaravsingh.design
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              +91 98765 43210
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              New Delhi, India
+            </li>
+          </ul>
+
+          <p class="contact-copyright">© 2026 Aarav Singh. All rights reserved.</p>
+        </div>
+
+        <form class="contact-form-card" id="contactForm">
+          <div class="form-row-2">
+            <input type="text" class="form-field" placeholder="Your Name" required />
+            <input type="email" class="form-field" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <select class="form-field" required>
+              <option value="" disabled selected>Your Project</option>
+              <option value="product-design">Product Design</option>
+              <option value="ui-ux">UI/UX Design</option>
+              <option value="design-system">Design System</option>
+              <option value="user-research">User Research</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea class="form-field" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Send Message
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-feedback" id="formFeedback">Thank you! Your message has been sent.</div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="brand">
+          <div class="brand-logo" style="width:28px; height:28px; font-size:13px;">A</div>
+          <span class="brand-name" style="font-size:13px;">Aarav Singh</span>
+        </div>
+        <span class="footer-note">Digital Product Designer</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Active navigation highlight on click
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(item => item.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Contact form submission handler
+    const contactForm = document.getElementById('contactForm');
+    const formFeedback = document.getElementById('formFeedback');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formFeedback.style.display = 'block';
+      contactForm.reset();
+      setTimeout(() => {
+        formFeedback.style.display = 'none';
+      }, 4000);
+    });
+
+    // Simple testimonial card rotation
+    const grid = document.getElementById('testimonialsGrid');
+    document.getElementById('nextTestimonial').addEventListener('click', () => {
+      if (grid.firstElementChild) {
+        grid.appendChild(grid.firstElementChild);
+      }
+    });
+    document.getElementById('prevTestimonial').addEventListener('click', () => {
+      if (grid.lastElementChild) {
+        grid.insertBefore(grid.lastElementChild, grid.firstElementChild);
+      }
+    });
+  </script>
+</body>
+</html>
