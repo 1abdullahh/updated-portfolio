@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +55,10 @@
       color: inherit;
     }
 
-    button, input, select, textarea {
+    button,
+    input,
+    select,
+    textarea {
       font-family: inherit;
     }
 
@@ -534,10 +538,25 @@
       margin-bottom: 18px;
     }
 
-    .icon-amber { background: #fef3c7; color: #d97706; }
-    .icon-purple { background: #ede9fe; color: #7c3aed; }
-    .icon-blue { background: #dbeafe; color: #2563eb; }
-    .icon-teal { background: #ccfbf1; color: #0d9488; }
+    .icon-amber {
+      background: #fef3c7;
+      color: #d97706;
+    }
+
+    .icon-purple {
+      background: #ede9fe;
+      color: #7c3aed;
+    }
+
+    .icon-blue {
+      background: #dbeafe;
+      color: #2563eb;
+    }
+
+    .icon-teal {
+      background: #ccfbf1;
+      color: #0d9488;
+    }
 
     .service-card h3 {
       font-size: 15px;
@@ -660,15 +679,27 @@
       background: #e9ecf4;
     }
 
-    .mini-bar.short { width: 60%; }
-    .mini-bar.accent { background: #7c5cff; }
+    .mini-bar.short {
+      width: 60%;
+    }
+
+    .mini-bar.accent {
+      background: #7c5cff;
+    }
+
     .mini-box {
       flex: 1;
       border-radius: 6px;
       background: #f3f5fa;
     }
-    .mini-phone.dark .mini-bar { background: rgba(255,255,255,0.45); }
-    .mini-phone.dark .mini-box { background: rgba(255,255,255,0.2); }
+
+    .mini-phone.dark .mini-bar {
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .mini-phone.dark .mini-box {
+      background: rgba(255, 255, 255, 0.2);
+    }
 
     .mini-browser {
       width: 100%;
@@ -1045,22 +1076,27 @@
       .nav-links {
         display: none;
       }
+
       .hero-section,
       .about-top,
       .about-bottom,
       .contact-grid {
         grid-template-columns: 1fr;
       }
+
       .services-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
       .tools-grid {
         grid-template-columns: repeat(4, 1fr);
       }
+
       .projects-grid,
       .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
       .process-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1070,15 +1106,19 @@
       .section-block {
         padding: 24px 20px;
       }
+
       .hero-section {
         padding: 28px 20px;
       }
+
       .hero-name {
         font-size: 36px;
       }
+
       .hero-subtitle {
         font-size: 22px;
       }
+
       .services-grid,
       .projects-grid,
       .testimonials-grid,
@@ -1086,28 +1126,85 @@
       .form-row-2 {
         grid-template-columns: 1fr;
       }
+
       .tools-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
       .stats-bar {
         grid-template-columns: 1fr;
       }
     }
-  
-    .portrait-frame img { width:100%; height:100%; object-fit:cover; display:block; }
-    .hero-desc { max-width: 460px; }
-    .btn-talk, .btn-outline-pill { cursor:pointer; }
-    .project-card { display:flex; flex-direction:column; }
-    .project-desc { font-size:12px; color:var(--text-secondary); line-height:1.55; padding:14px 18px 0; }
-    .project-info { margin-top:auto; }
-    .project-url { font-size:11px; color:var(--accent-purple); word-break:break-all; display:block; margin-top:2px; }
-    .project-info > div { min-width:0; padding-right:10px; }
-    .tools-grid { grid-template-columns: repeat(8, 1fr); }
-    .edu-note { margin-top:14px; font-size:12.5px; color:var(--text-secondary); }
-    .edu-note b { color:var(--text-primary); }
-    .contact-info-item a:hover { color:var(--accent-purple); }
-    @media (max-width: 992px) { .projects-grid { grid-template-columns: repeat(2,1fr);} }
-  
+
+    .portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-desc {
+      max-width: 460px;
+    }
+
+    .btn-talk,
+    .btn-outline-pill {
+      cursor: pointer;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      padding: 14px 18px 0;
+    }
+
+    .project-info {
+      margin-top: auto;
+    }
+
+    .project-url {
+      font-size: 11px;
+      color: var(--accent-purple);
+      word-break: break-all;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .project-info>div {
+      min-width: 0;
+      padding-right: 10px;
+    }
+
+    .tools-grid {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .edu-note {
+      margin-top: 14px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+    }
+
+    .edu-note b {
+      color: var(--text-primary);
+    }
+
+    .contact-info-item a:hover {
+      color: var(--accent-purple);
+    }
+
+    @media (max-width: 992px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     #animation-canvas {
       position: fixed;
       top: 0;
@@ -1120,121 +1217,464 @@
     }
   </style>
 </head>
+
 <body>
   <canvas id="animation-canvas"></canvas>
-  <header class="site-header"><div class="container">
-    <nav class="navbar" aria-label="Primary Navigation">
-      <a href="#home" class="brand"><div class="brand-logo">A</div><div class="brand-text"><span class="brand-name">Abdullah Shahid</span></div></a>
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">What I Do</a></li>
-        <li><a href="#skills">Skills</a></li><li><a href="#work">Projects</a></li><li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="#contact" class="btn-talk">Let's Talk <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
-    </nav>
-  </div></header>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary Navigation">
+        <a href="#home" class="brand">
+          <div class="brand-logo">A</div>
+          <div class="brand-text"><span class="brand-name">Abdullah Shahid</span></div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">What I Do</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-talk">Let's Talk <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17L17 7" />
+            <path d="M7 7h10v10" />
+          </svg></a>
+      </nav>
+    </div>
+  </header>
 
   <main class="container">
     <section id="home" class="section-block hero-section">
       <div class="hero-content">
         <span class="eyebrow">HELLO, I'M</span>
         <h1 class="hero-name" style="margin-bottom:18px;">Abdullah Shahid</h1>
-        <p class="hero-desc">Software Engineering student building and deploying AI agents, RAG chatbots and workflow automations with Python, LangChain and LangGraph.</p>
+        <p class="hero-desc">Software Engineering student building and deploying AI agents, RAG chatbots and workflow
+          automations with Python, LangChain and LangGraph.</p>
         <div class="hero-ctas">
-          <a href="#work" class="btn-primary">View My Projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
-          <a href="Abdullah_Shahid_CV.pdf" download class="btn-secondary">Download CV <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+          <a href="#work" class="btn-primary">View My Projects <svg width="14" height="14" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg></a>
+          <a href="Abdullah_Shahid_CV.pdf" download class="btn-secondary">Download CV <svg width="14" height="14"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg></a>
         </div>
         <div class="trusted-by">
           <div class="trusted-by-label">Built with</div>
-          <div class="trusted-logos"><span class="trusted-logo-item">Python</span><span class="trusted-logo-item">LangChain</span><span class="trusted-logo-item">LangGraph</span><span class="trusted-logo-item">Streamlit</span><span class="trusted-logo-item">GitHub</span></div>
+          <div class="trusted-logos"><span class="trusted-logo-item">Python</span><span
+              class="trusted-logo-item">LangChain</span><span class="trusted-logo-item">LangGraph</span><span
+              class="trusted-logo-item">Streamlit</span><span class="trusted-logo-item">GitHub</span></div>
         </div>
       </div>
       <div class="hero-visual">
-        <div class="portrait-frame"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAGkAaQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDwIDNOAApAKcOtWAtKKQCndKAFAp1IBTsUAFOFIAaeB2PWgBKeKQCnYoAKUCgCloAKWilApgIvWnikxinUAKBTwtNUVIKAEC0/FJS9qACjAoo74oAXFFGQOpFN8xCcA5PtzQAtGKTcD36U45HBFACYpcGq8uoWlvkS3MSkds80Q6naTnakpZv9080AWKKUjnFGDQAmKSlpDQAhFJjmnUlADSOKaBzTyKKAGbeacBS4oxQAmKKWimgExkU1hzT8UjDNUAztSYpwHrRipsIbijFLRQ0AhoFLjNBGKQCUh5opcUDG4oxS0UAJiijNFAjMxQBQKUVIxQKUjFKtLQACnAUgFPApgKopcHOacBS4oAQClAopRQAClAzShadimAmBSgYpcUYoABRS0DrQA9QacKQdKVmCjrzSAU8VE9wiZySAOCT2rPu9UZ5PItAXbH3gM81lz3HzN+8acqPmLH5VPfApNjsbVzq8MJCjknsOtVn15VQswAA7Kc/rXMm5aWTrxng4+97VJcIzMVVCNvUe/pSuwJ7zXbq5YhZCi+g/xqOC+dCCeT/eLHj8jVSNcscEYHUn+lWDEViWR1Kh/uJ3I9aWrAutrt55flCVmHXLDNVbjVLifKtK+3uc1DKhiUhzlsZYDt7VWVXlOB/9YUO4idZ0j5G8k9wcVPFeTsQBPOoHq2QKzyPLOM5NICX60h3OosdYuI2xNcRv6byM1ffxJaxrhkZn7lDkVxYYIMHJHoDxTlfcw5PTGKabA7ez1q1vOFba5PQmru4euM+tcCkiQqNpIk7tmrlvrd9aSBopnB9wG/nT5gOzoFZumayL1dkyqsoGcr0atJTu4HX0qk7iDFGKcBTsUwI8UmKewpuKAExS0YoxRcApp60/FJincBmKXFLRihMQ0pSbak6U0ii4DMEUYJp1LikBGRikpzdabiiwwpMUtFOwCY9qKWikBl4paVadipQDKeBS4FKOaYCgU8DFNFSCgBRRSjrSgZoAbT1WlC808DFMQlFLiigAA4opRSgZoGNpy9acBTlUdaQAEYkBRkngCsi+1CWV5LSH/VR/618Z574/lWxPKba3llBGVG0Z7seB/OsCe3WS1lELHOFAPY88n8etJjRBGojsXvlG3eSqKOmOg/M5P4D1qpqMDWlnDZ/8t5PnkPce1bMA8xYrXaohtxGG98ZY/icCqepRGW9ll6gnbn14HH6ilYDNsbORLjcMF4xuB7Cp76LyoxBD80kvBbPUk8/qa0YkSOKQ4HBwT3znpVa9T7Psm6HC7fxyf8KLAzOit4/NKkqYkODn0H+PWr1lC99KbxxhGO2FSP1rP0uFrx2h3YjP+sb0Gea3bm4CkxWoACIcEdgBxQIxp7YmTCqWJYqB/e5x/P8AlS39sLKNYVdXlPLEHitW3kiSDz2wFjXAOfv46n88jP1rHh33jsduZJOgA6Engfl2oApR2zzcqCxzj8afLbGMc4z7VuC2isQV+U7RkkHI9h9ax7m4E9xIQSVY8D19KLAVEjaQ8DilY7PkHUdTWw9mLay858CRuNoOSvt+X86pW1kJW3SEhTzhRSsBSAZjgKTVhZWjXYwXPvzV+6tRbqVOIgP4f4vxrNeKR/mAwn948ChoB6XzQ5EeFJ6kU+PULhW3LM8ZHcMapkAGjOcUAddpPiNZUEVySzL/ABqOo9TXQJIrgFWDAjII715zbzSWsqywSGKReQwPSui0XxBFHGttcscg4Rhz+FUmB0pppWkimWXlTmpCKoBuKQLTzSUAJTWp2MmhhQAyilxRQISkNONJtxQA2inYpCKaGNpGHFO70lO4EdFPPSm0AJRRRTAzV604U1Rinishi4pQKQU8CmIAKeBxRinBaYAo5p4FIBTqQCilFGKUCgAxS4oI9KdQAnTihadilC0AAFO4FAps0ixQkYJZiAD7d6AQ3UXV7OGJcbmcH9cZrnWu2t4JAB8xII98GtCe+DSe3kkgeuDWLNEzXdvDv/1h6+gz/wDrqSjcs4lMcQBBM0pbPcqoH+H61XmIEtoGGPNf8iQP8KhlvDa3sQ4Cxq4x+gpLidJFtnGf3bNz9Dx+eaLgO1YiG1j2HcZGdifXHSqWpzZsoCf9kH/v2Kj1a4Jt7Mg8AFv1P/1qZFIt5ZojYJGCc+2P6ZouSS24Wws5EyPMcZPscZA/AYqss0k8xto2OZGCE+3c/pUFxcFzyeTIzH8en8qbYSbLkt36Ant70gLuq3AWU20BARQBgew6f59TU1tIun2yzcNJGM4/22HA/KskSh7l5G5yxIp11MQscOchfnb3Y0AS3N4zRBd2WPzMfU1Z0m0WILcT/eb5YUx94+v0qhbQrKWmmOIY+W/2vYVauLl1jNwTteUFI1/uJ3oAde3X2m6Cr80cfyoOn41ct5wEPkrkA/NIOrH0X/GsW2jMjbcE5GcD0+vYVt2kchYCPMcY43heSPRR/U0wIxZsHD3JLMOiDn8//r1n3rF3I+UY6KDnArclOU8mE7eP4fmb/gR7k1k3iRwtsHzv1IHU+9AGWevPWirDQhTuYMPTOKiY5PXH4UgGgGpImCfNuIYEEEHpTdrHoCfpTSpHUYpAb1r4luonHmus3bJ4I/Guk07WLe/QBflfupNefKvPJq9ZStBKrhsY546002gPQaKrWtyZI1Mg2MQDg9wR1FWcitBBigilpCM0AxKTFLijFADKUCgg5pMU0AUhpaMUdRjaa1PI4ppoAYBRinYpSKEAzBop1FO4GWOlOFNpy1CAUCpRTAKeKLAOpy9KaKeBimAtKozSCnLgCgBQPSnAYoApaAAAClxSUtAC09ACcU35QOTTmkRYiFwWPTj+tTcB7IUQ4HIGaz72ZZI2ZSOPmA9DRM7hSeGHoCc1lXF8YY5Y2jwG455I/wAKTZSRlX92dwUdUGPwNWrwAQW9wvG0Fqyrxj9oOehq9FMJdJWI8su7afQg1KYMj1WXF62D8u35T6jqKIZxJBtJIKt19j1qC4bz7aJ+hT92fpVWJyjEE0CJ7lybWJG5KZT9aZaSlA30NRsdwIzyP1piNgH60xAxyeOlLCxWQGmHg0DqDQA5W2tk/lRnc5Z+e5pGHzcUKpPGKLjsWEbzsBvliTnaKbM7XMyqo4+6oApuQuFJJA7CpI7toQRFiPI5Kjn86BGnBbLZwgzMkQPOwn5mP+16CpvtylGESmUt1YghQPT3+lY0Use/dIzHnljyf1q1Ddl2C21s0jn+N/mP5dBTAugXdynBEEJ5LtwT74qFUiR/Lt+Wx97blif6fj+VTC3mfBu7jysjJUfM+Pp0FQT3yQR+RaRgEj5nPLN9TQBBLAZJ9pLu2ccdvqamMNrEMKBJKOuDuxVNA8r8KXP1rSgtMIN+zaO3XNAGXKO5Y/RelVyO2T+Nbd1Z/LvAjjHZn+X9KqGyVlOJHk9404/M0WAzsYPBzUkczRnIpZ0ER2jrURJFIDY07XLi0IU4eMfwuen0rr9NvYb+2EsXQ8EHqDXnIJ7E1oaXqE1hNvjfj+JeoIpp2A9BxSVFZ3IuolkHIIyMVNVgJijFLRigQ0imkU+koAaQKaOtPIpMU0wGsKbint1ptNgNooopXGFFJRSAzAKcuM0gpynBpASAU4CmingZpgAFOpaWgAFOApBTgvFACjpS0AUtJgJipoo4zNEkkqgNksQeE+pPFRgDgscDvgc1SaY3sTPISkS4RFB+/wA+vYUDRX1O8M9yYLKRyqnltvH+NQSW9ymDNNGR33ORUqxPEVWMgAjdgDHH41Tu0iZwrSZbrjljn2FTYZDNfiJ9uAPQq5zVG8vtxwfz7mpHsInkGFuGduicZz9BSNolyw3PGVA6DG5qkLmfK+/nOc062lOx484x8w+opZYhbkgxt9GOKgIKtkcUCJ1lCM6MMo/BH8jUEibW65oJ55zj+VOVGYYHzCgBg60u3JqZIMj0PvViGwkcgBTg96lysUoMqG2ZjkCpF0+bG7acV0OnaHMzqjYTdwN3ANdXbeE7lIAjRLISM/d+7WcqqRtCg5dDzmOwZmxs+boM96tx6HO0TMqng4/GvQF8FukX2uSNOWAKgHKe/FWb/SYrWBZArSKF4Qtj8gOtR7ZdDT6s7Hls+lvFwy8+uetUmt3VsAfrXc3+j/aN7JbumO3UisifRWRD8u1vTPNaKojOVFmHDDjnYjEdd3Sr6zGFCEJJP8MCgfr1/lTns5rcFnVse4zVR3aPLCOIZ9RyKtSuZOFh7JdXI2bTFETnHUn6nvTxYpFHmUhI/wA2b61W+3znIVmQH0wKT5ZcNcSTfiMj86tMixJLfRxDZAi8fxE5NRfbbiX5Ud1HoOtXILGylIKSI/tuwf5VMIrSA7kVGKnpuxTCxXt7O6k+dmwP7zrkVYljmjjKtIWyP4MqKcLtwMR2wHoXy2Ppiq8sd1csC8uMf3cigRQaEM5AI4981E0IBOZFrRntrhEwJQw9COKz5Cejov1HFIBFAB6jFSgLn93hfqc5qsRg0ofbSYHU+G9TVmFnKPLPO0jgMfSuoBPQ9f515vFevGY8HGxty+xrvtKv49Rs0mQ89CP7relXFgXKKcOlFUJjDSU49aQigBKQilpDVIBjdaSn4ppGTQA3FIacRTSKTASilxRSAzKcBSAU8DApDFFPAzSCnLTAWnUgFOAzQAL0qRabinKDSAWil6ilICktkhV6Hvmi4EN3Mlpbl5CCWGAuf5+lVrWKA20t5dTCBVTMcZ4389Pb2x15rLn1AS3cs86looTwufvN2quWk1KVrm6l8uBWztXufp2qblGtYyeeRO1tKYAeuOo7Ducf596JriFEWGKRYYi24IgUtk9iew/P61mPfzzr5MJMNuhzj/69RJcRiRtiqx77hwT3NAjbWUpEUtikOTlmB3sTj1FVLi1t/JEl1dk/77bR+CrzVNDc3zhRIypnBydq/goqZ7KK0weORnBOMe7Men0H60AZVz9nDkQozD+8RjiqUjMCOgXscda6K5t4bWJW2+a7jd8w2/Qgdh9ee/FZCW8t3dBBhSf4j2HoBUydhpN7FeGCSZuFBrVtdEadRtRiT2zgV0WheGjcMFMRI7MeM+1d/Y+DVWJFAKkELt9PX9f0rlqV0jvo4Ry1Z55ZeFHUBmVieM8ZArpdL8GCSQCQKnopXJr0C10EW+1EiRiCMFugrWs9HMLbtikHqB/+quSWIbO6GFSMTSfCUEACrCq5HzSEZaugt9DjlXDJkqep61r29vhAqpjHbHSrYhC7RtBPtxiudybOlQijAm8OQsu3LgYxwaot4TgeRiUUnOQa7PyBgHI/xpBag/w0XY7I44eD7aMsyohVvXrVG58D2W7zWhVh1IK5YH613rxAHHeonhDcMMj8qOeQ3CLPLL/wDayxkoEUdRuX9K4fWvAsnmssMbgL94kcD8a9/nsVc4GfpnNUZ9KjYEOoI9MVpGvJGFTDQkj5n1Dwnc2iEtCWGeo5IrFmiu7R9qyOoHYcV9NX3hm3uFKmFOTnp1rh/EngC2kDSIm1sHoM49q6qeK7nFVwP8p4x50jNucBlz6dKnSC4mOUzj1Tg/lWre6DJp16Y5Ebym65FLBp4tw2xyQOhHVa7YS5ldHnTpuLszFkW6RiZJGIH944xViCYjAmR2HYjkVpyzeaxDRoZV6qOjj2z/L+dQubBQUUCPcPunoDWhnYoXDpLkrsYf75/rWfNwcFcfjWlcq8a4yJoz0z1A+tZcgU/dyPY0MQwc0YoopAPRgoIKhsjHPauq8JrLG00fWNgGyDwGrmYEEkqKehIHXFeh6dZpbWsKIoAVRnFOIFsc80tLikqxBSHjtTqDQBHQacV4pmKdwDFNIp1IRTTAYetNxTyKbg0wEzjtRS0UgM4DilFGKUDmoGKBTwKAMCnAUxCgZp6rTVqQUAAFKBQKWgBcUrK0iFAOoOKQDNOIwvX8KBnGaxEbadLZCcffcj39aoy3hdfKjO1BwMVq+JIJILiadj8rEKpHQ5GawFG3k1mMtzXJWIQRDAHP1qzpdsZgzEgKPvO/3V/wAfpWcrhYsFAWzkNjn6VN9sk2CNTxnOO1CBHSG4tbK2Zxl8DC8YaQ+vsP5U2xUXH+k3J8yTrFEoyoPr7n3rBiYzzL5mWxwsfb2Faq3ixkxs3yBf3hU8t/sj69KLjKuqXTGfy0O6V/mZh0+ldZ4I8OLcOrSKC56lhXORadJJcG4mH7xm4QDgZ7f59K9Y8CWajaAvzKNzHt9BXPXdonXhYqUtTqdF8NxxxgOg+tdFHpUaBQAAfUGp7CHCLnArQCBfwryW29z3oxSWhRt7dQSSM4qzFCu4DH41MsfOce9TRoPSkkMdFGo7HPt2qYR54JI9wKFUdD1qQADjPNWiGIF28ZA/Cl28HpkdgadlR0o255oJITFu6iozHjOQMVaIyMgn8aidT0NFkNMqvEDzioWjBzkVcZccGomj3VLQ0zNlgB7GqdzZBycqCCK2XXHWq0icnBqSzzHxX4cFwHIiyRk8V5Pe2V1pc5K5xGeCecj/AAr6T1CyWZCGAHNef+JvDiSb2VBg8E4rpo1nHQ48Rh1JXPGb26jYh4V2Nj5l7GsuaUsTkZB52nt9K3Nf0Z7C5YKG2/nWBIpBwRzXpxnzani1IOLsyMSMOFbj0J6U123detBFNP41ZkFFGKBTETQNh89+1ei6Pci5sI5AQeADzXnlqm+TAcI3UE12PhRy0M0UgxIjfP7n1/KnF6gb+KMZpQOOaTirQBjFIadSEU7ANxmjbS0UhMaVFNxT+tIcdqq4DCKTFLQaAGYFFLiipAzRTlFIBTgKSGOAp4FNFSAUxAMGnCmqMU4CgB1FJTgM0AKtLjNAFOxQMw/FluZbGJk+ba4LY9K5FWZyw/hHUV6HeKJIGQjIKnP5VwU8IhupInLDnAwaiSGRSeXjC88djxUecAHA5pGUxsRg/jTd2akROlwYx8vX19K0tOKqokkIJyMKf51jg46DNWYHkJwOW7Uikdhp8i3UscaDkZJ717B4M00xRIWBBIB/SvNvht4amvrj7TKCUB6npXuFhZrbIqjJOBkn/CuDFVU9EevgqNveNW2XCjGauqDiobdOARVsD5ea4D0xFAA6U4cdKcsYI6Gl2c+1UIAxp4Py+9SJB0PfvUvkkcgVViWyumSORj8aeuQcHpU3k/SmvGRzQSxjcZ54qJx+dShc8ZpCvtTArN2JpjHbVkpng1FJF/8AWqWNFKVyDmo2fPUVNJGwzxVd0PTvUGiIp4weRWRqNosqMCMg8YrWYkA5qpICwP50Ib1PNfEXhlJQ67c7gc8V5NrWjG1dgAeDn6ivo3UrUNGWKkk9TXlPirTAtzKhXgcA12YepZnn4qjpc8rlhaMlWB7YqAgg4NbmqW7Rz8eoHPtWdPEjAsowcZ/GvSi7nizVmU6Bz2ooqiCVCVIbHTBNdr4Wg2WzT53GU5/CuKjbJCk9TXoPh+BrfTo0Zg3HHsPSnEDTpO9O7U3FaIBRikNKBRTAQiilpMUWExtIwPWnGmk9qLAMo4pcU0iiwBRRRUgZop60wVIvSgY4VKKiFSUAKBTqQUoNAgAzUgFItOoAKKXNFACAA5ya5LxPYBLpJUUAMSSf8a63r7VleIrbzbB2j5ZRk0mNHEzhhhj0Y1EoyQPU1ZufuqnUADH5VWWswHbcEHFbHhvSZNZ1GG1iGdzDJ9qyEJZsV6z8F9D3ySX8iDk4Q/jisq0uWJ0YenzzSPUPDuhxaVaQoqHCDGK6CJTu6Z9BUKHCe3pTX1izsBvmlGc9AMmvKacme6pKCN62GFANWkIUc9K4O68fFpPKtIsDsWU7j+lSQ+L5ZJsNKj9iuDx9auNFkyro74celPVcnp+VcraeJonk2Orbs4G9gv4jrWrBrdu4yZgMduo/Sq9kSqpvQoCOOam8sFTxWdZX8bsQWAO3P1xWpFIrRg9ePzp+zB1BghOKjdMcEVe2jAI6mo5YxjpmpcRqRRMftTTGMfXvVoR8UGPjpU2LuVDHjjrio2i71c8sc5FNMfBOOlLlDmsZs0XNVJIhmtKcDvVNx6CocTVSMydSKqEda0p0zWfICKixaZUuFDoVx2xXn/jCwAjaQjPOT+VehSntXNa/CsyFSM7uKum7Myqq6PC9fQqzOT9454rnpnJORjJPIHrXofjbSEt7EvGm3ZxgeledrKBuU85r1qMro8DEQ5ZFc9cUmKluCCwYDGRkioq3OYlhQyMB09DXpemoyWkSuMMFAIri/DNgbmV5GGY1IB/xrvYUCxqo4wMYqooBaKU0AZqhCfhRin0jUXC42iikqkAjUwjmpDTTQA3bTSKdnnFBNMBmKKdRSsBlr1qQU0CnCpGOAqQUxakxQACnAUgFPFAhQMUtIKWgAoFLRQMSo57drqMwIpJk44qSnJI0bBgAT2zQBxM9oDPPvAHlnOD3H/6uaxpoxE5XuO1dRrsSOWhQYJ3MX9STwvPpj9a5q5RhJghs8DnrWbGMjUkg469K+j/h7pgsPD9koHzbNzfjXz7p9v51xHFzneBX014dj+yaRApHAjHX6Vx4l6JHoYFatk+paoYrdkSRRKwwoIzWFF4bu7uYS3UTumP4cg/ma2YNMbULwyOsbIMZwMcfjXWWVpFBDtGR6ZGSK500ju5WzlLbwoVjDwmV1HG37rAfhwag/wCEe1GQsEmnjiz2KuD7gkfoa7sRLv3chjzuXgmr6AOD6nqe9UqgeyPKpNM8Tab5jQ3CXKjojxlWUe2O9V7XV7pZgLyyEZH3mGUYe/ua9fS2UKQqgL6YrP1XS7e7jIe3iJA4JXmn7Uj2Opzel6zGkYjWfcOi5GNp9DnpXSaNrBeB0lPIKqD6HJrmJ/Dy2rl4twBGMdqSOWaEgFiCepz14xUe0Rfs2jvdK1VbmISg/K4JH06VqxyrKMdq8+sLxrURx5OFXB9xmuo068Yjkkn0zgUcwWZshAB09qZIu0GnxsXUNkHimTSDHJ7UmCbIiAT0xTJpViBJ7CqVzqAjBAPzDoDWNca8rM6ZAPPXnH/1qSKNK5uQwJBFVknCrhsjPr3rktY8XQachBdmA9OrYrmJ/iZG6j7PGoz/ABEf0qo07ilVUT026lXHTg96pyFGUnI4rzeHx7Jchgs0pIHBVeBSf8JtLJtQuVJ4KEY/I/04odBslYhHb3FxCrFdwH41ga0SACenXisCfXZSrYndWU524+8PXP8Ajiqh8WhwIJyGjbA3kYK1PsGtSvrCZB4htBf2UiY7f0rxW7jNvdyIeqt3r3C4YfZmwd2RnPrXjGvqF1e5HT5811YbRtHn42zSZQLFsj1oQFmAHU8UA81teG9MF9cGRvuowNdh55u+ELJ4bWR3GPMOQK6RQOvrUUEKwxhFAA68VMBWghMZNKFxS4ooASinYpCKYEZpDTyM001QDTSYp2KMUARsOaQinkU080ANxRS0UAZ2KUUnNOFQMctSCo1qRelACinZyabS0APoFIORSigBRS0UmaAFIqxZ2F3qMogs7ea4mIJCRKWYj1wKr16X8OVbS9ITUIrZ5XuJmjcqcHaO30rGtV9nHmZ0Yag60+RHkXirRLrTFjnvLeWBk4wwxkVyzwbnJkUqoOSa+pfFPha08V2e4KGj2k4A6H3/ABr5m1uzltbyazKsDvI5+uM1lSr+0NcRhnS22GaVB5d3A56swOPXntX0rYxbrGGPGRsAx+FeA+FrE3OtWVrzw6Amvo+xtsBQO3FZYndG2CWjH2aLbxhcAduKe2pquRn9adfQ+THuAxxXJ6neHBHmsh7YribuenBHWjXbWIAyzKv1qa28VWjNiKO5lx1KQtj8yK81i12w0ybJEs0vJJPzHjk/hV9fGOoT2rT2GmEoEZ/MmbbgAZ4A+oq4UpSehFStCG56K/iVtuE028Yeu0f41Vn8TxAZktb2IDrmIn+VeR6P498e+KmlGlQ2QVJhHkKSQxGVH44NO8WeNPFvhG8srTVm0y/a7tluV+zHPBYgjIJ5BBFbvDS5bnOsXTvY9Q/4SfTLs7UuEBPAV8hj+BpssSSqWXB9wa4Gx1MaxYW93eWDpbTg7XI3r75P1rfsHmtQn2eVri3xkfNuwP61zTg1ozshOMldGxbyJHMA+QB2rp9LCyKWXGODk1x1428RzJ0PcV0egTjyFBJziovYcopnXRSAKFJ49BVHUJ2jB2nIIqSKTMeao37gofYVTZmoWZz+q3pDFlbnBAHvXDavrJVZBGdzH5R1z061oeLNSa2ZlQ4bnNc9YJ9rbe/3e2TTTsDV3Ywp7LUNRkLGN2JJ5Y5zn+lT2XgLVL7BeSNVzxxiu4tJbGzUedt9jit2z1zSlQbZPm9o2/wq1Ul0IdGHU4VPhVcHcTckcYCqv86nb4YzQxpIlxvYcBWT+or0aDWNOlUDz41J7N8ufzpJ7yLkrIpB9DxT9rJbkqhB7Hk134Z1e0TZ5UcoHPLcfn2rmNS0K5t83CrtYj5k80En2xXtN3LG+c/X61z+owQXGV2pgjHIHFONW5E6CR5hoV/cS+daznJUZQjuK8919xJq90R0EhFepa1psWnah51uuAQeQK8num8+ZnPVnZj+Jrspau552I0SiR29rJcziKJSzHoBXoei6YmnWqp324b65zWL4PsgqGeRB85IUntiuqAxXSkcg8GlpAKWqAM9qUU3HOaeKpCCkpaSgAxSEUtHFMCOg044ppoAaabjmnGm0ANwaKdRQBnUUUtQMVakHFRVIKQDqWmg0vemA4A+tOFNB7U6gBaKKKAHoOea938DaYtn4M06Vxy0TTEH1Zj/AExXhIB2nHpX0baW+3SrGxU4C2sKAfh1rixmyR6WWr35PyHWllLBaC5UHypT+8H93PevIPjV4Gt9LSDW7MABnKSIOi5OQR+NfQcUSxWBhKgqVIP0ryr4w75PA08TOFInjVie4DZ/pXJS92SOzEe9B3PJvhhpxv8AxLFJjKwqZGP6CvfrG3AUEgZ715h8HdL8jTrm8ZdrSsI1z12gV6vanAq8RK7MsJC0bjL+382PaBXKaporYcooyf0rtyN1QT2ok7ZrnR3I8xTRHkLRTgkOfm9WAPQCu40O10maxltZwtu7xtHkqMKCD93060+40kM5YLzUElsYxhkIHTIFbUqzgzOrh41FqeEahYa34PvdX0bPlpdqI2k2jmNW3K8bfwntkc4JFYen2E6sqeU8gBCII+Ryc4A7cn9a+h5UiJKy26zccK0RapYoSYto02FVPQyLjHGOlb+2TOf6pZieFotJ0TwlZaZeXVu84BaQAlgrMckZHpWW8lpZ6uP7LWUwO3zjB2gEcEZA6VrxaeY0QELgdlXaB+Hf8TVx4l8vhFB27RgVnUnzI2pUlT2MlxhRGDuzz9K2NHyuAaom12t0rU06Erg5wa5GdK1N+E4QZ71Q1CTCMMnNXo8hAOtUr1dyEGgZ5R4y3PeLycGqUAjVMXE4t4UAyQMs3sB3Nbfi+2HnoQKxLfSH1EBTKY3Rsq3pWkTB7tF7SNN1XV7kDSdJMS5+a5u1y34Z6CsptV8a6hr17pmg31s62MqxyNsCk5yN3PQZ4r0Lw94gvNJjW1ltUuFjBGYpMMFzxwRXjHjbQNWg1jVb20t7wWdyzMZUBHyE7irY5GCB7V3U/ZrU4KyrXfRGv4n+Ifi/wpqEVhe3+marDNax3EckYV0dWyCAy8cFSPwqLS/H9vqcay3tm9lvyBLExAz+FebQaVcyyxrEHncnYkancRzwAPx6V7XpvgyHSPBEdjfpEbiTdI3cqzc8H2pyhCV7GUKlWNl1M+bxRdW6CS3uEvYf7rffx7Ef1qRddF1tZSQW5wa4y80t7GYeU75Y8gHg+9bmhW0s0iq2COxxXJKCWx3RlKW5a1ol4JJT/DGx/Q14t5ZeUIuMscfSvc/EtmY9MlUfeMLjP4GvKfDGkPf6xEpXKxhWYY6845rpoytG5wYiDlUUTpNDtDFp0KBWYIPvbeM96viulvymmQi0t7YSSMcEDoorm3++cetbUKrne5nicOqVrADxRk+tJmiug42KDTwajzShsU0A4mk3UbvakJzVALuo3Cm0GgBScmmml7UzJoAKSgnFJ1oANwoo20UAZwNOzSYpxXjvUAJT6TbxSgUgFBp1MxTxQhjv4aVabSg9qYD6UUlFAEg+6fpX0d4X3X9vZ3XLILWIZHrtFfOcQr6c8LQLp/hSwiz+8MKZP4DiuPF9D0svunI0pLwQgYwcdjXkHxr1g3ejyWyoI/Nlj+6ODgk/0FetvCrwlmGf615t8WdHh/4RW6uAg3Rsrg9/vYx+RNccL8yO+sk4MofDi28jw1Y5GC67z+JrtoBk1zHhF0XQ7JUGAsK4HpxXUWfzNk1FR6jor3UaEUfAP6VK1t3xRCKuBM1BvYom29qY9iHHTFaflcDrTWjIPAqkBkNp6HOQaT7EsfRcVqbGzUZhJHHOfWquhamS9ruHAqGW22cnrW00IC9AB9Kz7zg4FRKRUYmYIg7gGrkJCsABULFUQn+KpbQbjuxUl2NWHJUc1DdruXp0qSM4ANLOu5c9KAsef+KrfcucdDmsnTI88gfMK6TxNHlDjpWBpB/fYx3q09DGS1NhLLzUByR39xVa5W+ggMStvQkkgjIOa3ILc7VIGKsfZg5G4VSkNR7nCT2irIrraxW793SMA/mKbOjzAIZnce4IrvG0yN2zsGagfSUyflBpObLUInn50ISvuZM1dsNKW2Ysq7cV1TaWFJwOKqzWvkoeKXMzKUbHLeJ4y9sQO6lR+IriPhTatPc6iyR5kXYhz0A5zXeau4kQDqBiqPwf07yLXVpmUhpbx0UkfwqcVvF/u2cUo3qpl2xsI5JJQ2SymRsn2HFcH0zXqkFotveXW4jG52z7bc5NeU55P1rownUyzHaI4UU3pRXaeWKaUc02lFUkIdRSZozTAWigUUAB6U00pNITxQAhHFMzin0wjmgAooooApgYp2KaCSadUAGKBRRQAUopKcBQCAUoOKKKBjwaWmgjFKDSAmhG6RFHdgPzNfS0ExTQ7VhnCoAQOxFfNNuwSRGIzgg19FaPeh7WFyN1rcIrZHO0kCuHGdD1cudrl2x1Rbhdhc59KoeMNGbXdC1CzRjuMPyA/wB7r/SqupW7WV+bmzLNGDll/wAKtw+JLW4dJFJDJ8soPcf4iuWLO+ok9jh/Bc5/si3jkOHjzGwz3Brt7F8L9TXAaOfsmt6rZ8BY7lmUDoA3I/Q12unzDgdc1NTcmi9DoLdquRsDWbA2MHsavRnioR1FxG9s047faoFY+tPDcdapMnlEK+1IVAFPXpx+NIQcjBFMZBIu4EdBWNqHysfQVuOAAea53WJ/3wiHBOc1nJFIoySeYygd60rWPaoqlZ226TntWpHGVGBSLJo8jHpRcN8vNTww7xjFMubdtue1NIDltbi3KQeh71y1hiLUAg6E12esw/unHoM1xMII1JG6ruwapGM9zvLNAYhkdqsrHjsKhsRmFc96tqCCaRaQ0RAjPQ0fZ8qTxUooLYHWkOxTlhAByOKxtSA2nHoa2riXAxmuf1KTAbimiJ7HI6jhcrjPOB+daPgMPb6YqbfleSSQH1yxrF1d3kuFjTJZiFAHqTiu20TTk0+ziiPRcgHPbJrb7NjkppOdzE8Zzf2VZ3Mu4+ZcxeUn1Jwf0ry88V6f8WMNptiwx/rO3cYNeXMa78KvcueZj2/aWFBpSaZmjNdSRxDw3FLmo80oOKoRIDRSDmlFACg4oozSZoAUmm0GkyKACikzSZJpAFFFFMCoAAaWkpagBaKTNOB4oASl7UhooAWijNFAxaUH1popaQEoava/hjrUV/4cFjJIPNtvkIJ5K9jXiAbFdP4E1n+yddty8jLFM4icdsH1/GsK8OaJ04WryTPeLC0juY5IXcIx+7nvWBrHw8ufMa4trzyi/wB7AzxXWqsM8RZ056DtjFVL13jiEasxZhgAmvLlo7ntwbPIpWOn+LL2IvuJ2qW6ZIHX9K7XSpN6rnr0rlfFmnf2f4lilZSftCDcPcDr+PNdFpDggYOeeoq56pMxpu0mjp7d8qK0oeR1rLthkDitKFqxOxMsqfwqRegqEMM59KkQ54BPNNDuTrjt1p2wbSKjXKnrxUuR6cVaIbK85ARsccVy8n768bP3uma6a4G4HHpXL6kxsrgTEAI3GfepZpA0I4VhbdTxcIpx8tYGo+I/ssICRNNI/Chf8a5WHxF4uOoNJPo9vFYr0/eMXP8ASps2aXsesWlyMjpUl3Kjp04HNc3perx3VsJeUZh91+Cp9DU11qkaRHc4HFPoTpuU9duo0hYEjkVycULZLqOQdwqhr/ir7ZeGOzt5LtIT+8KHAH+NacVyZrVTGpV5MDbTSsZyd2dhp0okt42AxkA4q4eORVTS4wtvGo/hGB+VXWAx3pMtACD1qKViOhpWbb3qF2BGc1JRVuH4yfwrB1CX5TurXu3GM55rmdWugik56cVSRjVloY+n7Z/EUXmfciPmN+HSun/thLm5WGPGAcDHauG0e2uNY1C4ZGkCbggKd8df510EVw2jmS2WLfMv8bfwj1NbPsjmpSS1ZR+KOoqzWNkjAlAXb27CvPyava3fvqGoSytIZDnG71rOzk16dGPLBI8fFVOeo2h1FGaK1uc4Uo6U2lFUBKvSlzUYanA5piFzQTxSHpTcmlcB2cimmjNIaAAGncUzvS5pALRSZop3Aqilpo6U4dakApRSUooAWikNJQAuaKMUooGApaOlJSAWpEkKnK5BHINR0UAe0+BPiPa31pFp+pTLFdxjaHY4Envn1ruv7Ws2jMpdCABzkV8vAnqOKmW8uFXYtxME7qHOK46mFTd4s9CljnGNpK56P8RPENnc6xZeRMrsGwwUZx+NdBoQxEnqea8XEz71cnOGB5r2Hw/cq9qg7gKVYHnFYVqXIkjfD1vaSbOwtGIxWhGdp4rJtm6VoRHtmuQ70y6mOakTIPFQxEYwamXjGKY7llOTSuwUVErYpjygd6LgK5B4rM1K0huo2SQZBq286gcmqk9ym08/rRcuLscpeaJPBJ5lnM2VIKq5yPpWzaE31oElRVb7p+tEs6liANxP6U63PluGyNmM4H1oKdS5jX1hJZsxjJK9QO9YGo21xFEbi9dmjP8AyzU/z9a7UTLdTODhlFY3i63LQKBjmmJvQ4e2F1PcmWwtkjjbgFu/vius0fSJUYPO5dj3xgD6VT0ryo1Cf3eK6qz27RSbCL0NCzTywFqxKPwqsrgMBUryZXNTcdyCYjHWq0smF61JO3XFUbmTatMlyKd7Lg5FcP4x1E2tlKwIBAzXU31xsRmPQV5rr039qa1a6UD/AK6Tc5z0QVvSj1OSvK6sjrfA91e2+h20AVEYAszMMnLc/wBaz/GOrSWizWQk33E2DI/fGOlbN9e2mlQCbeqADG1e/HFeb6pqcmp30t1JxvPA9B2FdGHhzSuzkxNTkjyp6lakJxTc0ZzXoHltjwaXNR0qntQK4+ikop3GOzShjTaWi4Dic0lJmg0hC5ozTaU0AGaM0lFAC0UUUAVQaUU3JpwOaAHDmlpAaWgBMUlOooASlopMUDFoFJmlFAC0UUdaQBQDSGkzQBJnKkZr0fwTqAuIFUknZGBXmma6fwRqP2e5kid8AHgH3rmxEbxOrCStOx7FBOAq9zgA/wCNattKMAZrmrObzAGB+8vf+Va1tPyCePavMasewmbkb55NTeaMVQinGBzUjTDbUmhPLdiJeaz21ENwMk8kDPb1rP1KaaaYRJnAwcZwD7VH9nYKI/NOMfO3r7D6U0JstyXTzfd4C9vWonZn3N1wOBT41TAVSMdc1Beavp2nZEsylgOg5NOxSTY5IJHfcOASPwqe5tWhspS2AcHaQO9c7L41Jci0hQLnO5qoy+K9UaTe0wdM8o3QijlZ0Qo3N+wdYsq2N3r60/WUM1qrEcgHkjrWO3i6yihNybdhL/zzHTP1rGfxne3MxkMaiHPCE0KLZboofIptHDc4JxgdT6f1rcsNRwi7jx+tZlvqdnq+CxWORT9zPWmrHsLKpwEOV+lFjkknFnURagjEnPT1qzHeZPUHNcorMyMd3GM/hVix1P5V3Zye3cVLiJTudBO+Qayru4wMdqle63JmsXULrGRnvVRQpuxn6xehYXAPUYry6S4NzqlzeqcYfZGR2A/+vXUeLdTMVq6q2GIwMdcngVyMC+XEiHsOfrXoYeB5GKqO9kWprua4OZZWcj1OaipBRmutK2xxNt7jsUUmaM1RItJmkzS4oAWlBptLQA4HNLTVp9ABmikpaACiikoAWikzS0AFFFFAFSlXrSU5etADgKdSA0ZoAWikpaACiiigYmKUcUh6UZoAXiigUUgAmm0tJQAYqzYXX2O7jlxwDgiq1Kv3uamSurFRlZ3R7LoF2Jo1fOQ3eugEgA4NcB4dvzabIJCNpAZT6giuxil3jg15E1Znu03dI2bafcBz0q2ZsrWDb3O1uoIrUhl3jOQB6Vk0bIeId8pc/dA4FZ2sSXawMLNf3h6Z4rVGMYpk0IkwSPwoRSPNdR1HxFa7reUopfODkiskWt+0hMjrIRjnce9emarpsd7CQ8akjoQOa51tJa2BGw7eCTj06V0QnHY3hFMwHh1K2jytukhHOATyKVbouo8y3nj4ycLnmuks4TjBY56ZNT4WEhlXoeQauyOtU1Y4uXUImIXE+PdD1qG5utihILaZ93AbbgD8TXcfZYZj5nlKck+nqaztTgiNswVFDEcN6GjQTpJ7nCT3F1HKNsEqOBu4rW0nxVdF0hmheVjx93J+lTTQeaA6AeYWOQBxyMH9av6Npi2v+kMuJGPPHSlNxOGpCzN+wkjv7VC0boT2IqKe38p8bmyjgg+oJ6Vcs12R/exzmm3KiQZLHA5ArnuZWI5rkRW+e9c5e3ZdiSeOTVzWbtYiUBHPvXJ6xqPkQO2cnGa0pxuc9WdjC1q7+3XgTqqcn8+Kq0icgufvPy1KTXq048qseLUnzSuGaM0lFWQLmigUUxBTgabRmgBSaWm9aUUALmlBNNzSigB4NLTAcU7NADqQ0ZwKTPFABilppPpSbjQA7cKKbRQBBiiinHpQAKafTM4xTxQAdKWgUUAFFFFAxD0pKWjFIBaCKKU0AJSUtNoAKAcGigCgDvNPtzdaLazxgmVEAH4dq6TRb/fCFY4bGD9ax/BgL6NDnJABGPxqxfRyafd+fEp2N96vIn8TR7tL4UzoZGKgMDV21uWGOecVh21+tzCCW+atGzkVmC96yaN0bNvdHJ3HntmriyArWeqcZpRIUbFTcuxcbBHuKrziMj5sUolz+NRyx+dkUrlq61My7FvGCzsAe2KxL3VrSIjdP7cc1vXmjLMpJ6VlDw9HGrnZu2jIyMbsf/XrSMjRV5rYrQ6tayAxLOuRx0IpxhS7O3zgwBHAqOPQEJUuMSHknt/npWtHosMWJEBBx2NDkP282VrfTIY1GBn61I0QTIPCirZjWEcfhVC8uMDOcUr3MJSb1ZP5oWMrVO5uwikk49KqtdO54OFrJ1m9KL5at8xpxV2ZSlYztSvDcXDMTwOK5nU5Tcz7RzGvX3rQvrkxQsqAl26e9V5bP7PYbjyxwSfc11Q0aOGpqmZjdaSg9aK9E8oQ+1Az3paKADNLSUU0AtBoFJ1oFYKWkpaAClFJSigBaUdaSlFAD6Q9KbmjNABSUvWkoAKKTNFAEANOpMUtACgZqQU0U6gBRSmminUDEpKWkNABmjNJS5pAFGaSigBc0EZoFGaAEoHWgmgHmgD0fwEwl0sR9eWH61099YiW3BA5x0Ncr4BSSK1jZkZVdiyE9GGcZH4g/lXfpH5qexH5V4tfSoz6DDa0kcC3m6XcHr5ZPGO1bOk3+6UZOQeQfWrmsaQJY2IAJ9a5VDLpkxVgQPXtQveQ2uVnpdqyyIORz2qw1rkZrnfD+qCaMKTznjNdIswKZ3Z96xaaNotNEaW46NkVdgs49oJHJNU0u0ZixI2gevNaFrIGGdw9MZ6UJMq6HpaRDotNmtIhhioz64qyrKoyRmo3uUPHUYzWhNym9jHt3BF9uKozwgDGMVrPIChA6nnmsy7bcCQenWpki0zFvflU1iXA8wgDNbd/KnOTjFZUjKpPehESZRnCwoSRziuR1K9DzE56Vt67qCohRTgn3rnbOwa+uAx3FfT1reKsrs5Z3k7IdpllJcyG4kBx0UVc1bT5blEtbZC8hzhR1OBmugs9PWCJQABin6c8dr4p0pmGVFymf1opy5poKlPlps8uyGwRyCMignFW/iVpp8CePbyyAP8AZt0RdQD/AJ5q55A9g2ePpVIMHAKnKnkEd69dnhBmnDpRS0AJSbqWmU0A+l9qaDRnmgBaM0UUCDNOFRk04UAOozSUGgBc0tNFKKADNBoxRQCEooooGRgUUgNKKAHjpTqYDTgaAFpaSjNAAaSjNJSAWigUmaAFopKBQA7NJRmkzQAuOajkl2SRwxrvmmYRxr6sTgfqacZFUEsQAOTV34VWn/CSfFPw/E43RC7ExB6BIwW/mBTSEe5eJtKg8MX2i6XAo222nJEf9pwxyfxJJq1aksm4DPqKtfFGDPie2YfwwZ/M1TsnwinqcYPvXj4tfvGe9gn+6SJZ7fzU6VzGs6QJFPFdkq9x+VVLq081T8ozXOm0dTVzzhbqTTH43DHQDvW/a+IDKIw7AAL071HrGk5ZnQfUVy16J7RzJFuYhSAoP3vatlaRzyTjsdy2qKxIJUMQq8fTpV7StWkYsxJ5Z8jtxXmdhrDtcYdwoBWRgTjOOgHp1xXQ6VrIjtkkHLEjCk+uSc/nmqdNomNW56CdSDR/O20Fcnn1qtPfj5SCeeK5QaplSgdssR8xNSHVN+CW+UHPJ7dqzcWaqaOpTUkkB5IIxVK61BfLJX/gVYY1TKNs4jxkY7/Ssi/1tIIHTfwP4ietNQbE6iRa1jWDGzgnhTz71l3GtqVAPBIP6VzF5rzXs2xc4X5iQc55qe3tJbloy2QF5ArTkUdzFTcnoWVgl1OcOSQn866fS9KWMKcAelN0nTNoAK9P0ro4LcRrnj6VjOd9Dpp07alOSARqeOawZ126layKSCkysPzFdNOvyk1gT2ry3ke3OfMUD/voUUfiQV1eLF/aa8MrNpWma3Go32/7qQ+qNjB/Aj9a8N8PaiUY2UzHj/Vkn9K+tvi1oq6v4YNi3InhaMex28H8wK+MLiN4JMkFWHB9jXuyWiZ831O5yaUVz+ka5yIbo9ekn+NdACCARyDzmpAKaMU6mUwFAzTgMU0GlyKYC5opucGlyKADbSg0hakBoAfSGiigBcUdKBSd6AHZpDSE4pQaACijNFAiIUCm55pwNAx2cUu6m0UAPzS5pAc0GgANJuoyDSbaQDgc0UDiigApelJSFqAFzzSEnP1pME81nanqawKYYmBkPUj+GgCDWdQABtoiCT98j+Vek/sz6cLjx814R/x52hI+rsF/lmvHlO5+Sa90/ZjQxanrdwP4Rbp+rGqiI9f+KFvt8Q6c54WaF4v+BD5h+maxbVPLArq/jDbn/hGU1aFcyafJHcjH91Thh/3yWrk9PuY7yFJYyCpGa8jGK0z3MDK9M04sEdMU9o/l+tMhYgYIHHerJUEc/pXHc7TC1G0DIxxXLX2nDeeM5PpXeXMAcHjBNYN1aBWPr6U1KzE1c4a88PxSu7gMrlcKy9qz00fUrb5o3DjqEIwRXetYK5Ixj2p8VkqcEdK2VVoxlSTOGBvbdW3WzZJye+eMUx7+cjZ5EjAYJIXOT0rv20pJOqq2enFH9iRqOY1A+lV7UXsDz6S6vTCsMds6/wB0twFqjPpd5eFFmfagByF7+ld9cWCoxGAB9KqSWg6AAD3pe1YexXU5C20NISAqe59TXSaZpoYAlcCrCWYDAhfxrXsrfpxWcp33NI00tie0tgFHHAq6YsDkjFSwwYHI5p7oNvQH61k2brQzZoySVAqnbWpm17S7ZfvSXSscddqgsf5Vqy/KSeAKk8EWn9q+NnnXmKxt8Z7B5Dj+StW2HV5pHPiJWg2dj42jxaW4P8JBr4r8bWP2HxLqduBgR3L4+hOR/Ovtfxw3mbYxXyR8X7L7P4zvSBxNHHL+Yx/Svfa90+bPP61NL1uWy/dyZkh9M8j6Vld6DWQHeW91FdRiSFw6n9Kca4e2vJ7R90EjIT1x0Na1t4mkXC3MQcf3k4P5U0xnRUvQ1UtNUtLvGyZQ391uDVvqaYBSUu2kNMApVApOlFAD80ZpvehutADqCabnijNAATmjJppJFGaAHZNFNooEMpwpgPanA0DH5oFJQKAJKTGBTc0Fs0MBc0BuKaaQUgHk5pVpopHkWNdzsAKAHtTHdUXczKo9ScVmXmvBAUt0y3qayXknu5N0shK9xmiwGxe6sqRlYGyT/Fj+VYUj8kkk5qSTAGBVd2wKYh8PzNmvfv2ZV3W+vt0Pmwj/AMdavArT71e9fs0yDGuoDz5kJP02sP6VUEB9GanYprvhmezlG5ZImjYexGD/ADrwrwtdy6aZdLuTtmtZGiYH1U4/pXvuhShomhPNeJ/FDRpPDXjf7fGrC21Ebwe3mDhh9cYP51wY6ldXPSy+raTizo7eUSAEGryOR3rndH1ASxoc4JFb0DhgSOoryrHrN3JCh2/Wsu9gyeRkd62FcHjpVa6j4JHWpYIxQuMAjv1pXjDcEEYqYx7uBT4042k5I7N0qosGQxfuzxIfoRkU+7lRYshl/AUrW/oAPYGqM8DM2Mk/pVgimcTSHJye/ao5IR0IH4VeW1CDPrSSxhVyFGaBFBIjuAP5VsWVqdu4dags7YyPkjkVsRQhFGBUMpDNuB2qGUccVacc8iqtzKqKeCPrUjuZmp3S21u5JGcV1Pwb05o9Il1GVf3l/cPNk/3F+Vfw+8a8z8RXMt3crZw5aSZhGoHqTgfzr37wxp0elaVb2sYwltAkY9+K78DDXmPPzCpaPKc/4pYNdECvmL44RAeKLd8fftAPrhjX0lrkhe9kJ7MRXzv8eEA1zTz62z/+hV7VtDxDyGYYY0ypZx82ahrnYxacrYNMpwFICbGeRV2z1a7tCAH3p/dbmqMZGMZp+KsDpbbxDazACUGF/fkfnWjFLFOMxyI/+6c1xGKcjvEwaN2Rh3BxQM7jbSdK5m31+8hwJCsy/wC0OfzrTt/EFrNhZAYWPryKLgaY5pMc0kUiSruRgw9QafTAaetJT6aetADTRS4pKBMTmiloosBEvWn0wGndqAF60tIKKBik0ZpMZo4AyTgUAL2oJVRljiqk+pJEcINzVl3N68hJZjj0p8vcTZpXOrRwgiMbj61h3eozXDnLnFQTTFjUWcc0nboAOxHVjmrtuu2Lnq3X2qlChmlx1Aq+MjjApICOQCqzjpVl/eoGGTQBLbc/417P+zbfLBr+sWjNzNbxyKPXa5B/9Crxm2GK7/4L3/2D4hWQJwtxHJAffIyP1FXED6+0mXZOBng1H8RfC8finw+8Q2rcIRJBIf4XHT8D0P1qrYzbXjfPWuuj2XVptYZBXGKVWN1YqEuVpo+bNGvJLSTyJgyOhKurcFSDgg119leEqO4xVH4k+HW0jWRqUK4iuyRLjtKO/wCIwfrWfpGoHhSeleDWg4SsfQ0qinFM7KKTeP8AGpWJKHjHYe9ZdrcZGQavJLuGKwNivJGm45G1ifShYyWB4NOmBBJyPoaI2GBxg1URMVolbquPpTJLdSOBVtGU9eKHkVB/gKskzfs5HQVUlj2khq0Lm4I+7iqOwytk9utJhcs2UIxk9Owq2w2UyBVVaSd+ABUsoZLMMGsTVbrYrEnpV+4kIVsnFcnrl4z5APH86SQy54C04654ySZwGjtB5uf9o/Kv6kn8K98iHk2DN0DZI+lea/CDRTbaU2oyKPMvHLrx/APlX8ySa9J1RhDY7B2GK9vCQ5YI8LG1Oadjz7U33zyn3NfPHxxuN/ii2hI/1drn82zX0LfjDOR3Jr5q+NE5k8bSAEZS3jX+ddz+E4jzu4Hz55qCrUy5GarYrnYxKdSYpaQCirCHcMVXqWNjTQx5FJTiMjPekwaYCU1lPan4xSUCFhuJ7Zt0crofY1pW/iSeM4mRJR6jg1lsMmmlc0gOrttcs7jGXMTejj+tXwwdcqQR6g1wo9Kntrue1OYZWQdwOlO4zsC2D7UA1h2/iFulxGD/ALS8fpWrb3kF0u6KRW9u9NAT5opMj1oqrgRA08Gq7Txx/eYVWk1ZEBCAfU1NhGn9eKhkuo4s5OT7VkPqMkhzk1GZC5yTk1SiK5pyakP4VqlPdvJnc3Hpmq5fjjiq8knXvT0QEkk2TwaqySEnrQzdxUZ61DY7B70hPGDS1JBGJH56CkMsWsPlR5PU1KB60nIGB0pw6VQiJ+agPWrD4xULLg0gHQn5sVt+G746Z4l028U4MU6N+tYkXynJqwjbZEk7qQapCPuC2IEKlTx1rq9Dn8yBQTzXEeHLkaholjcKciW2jf8ANRmul0aYxOF9ackNEfjTQ4tWsJ7WQDEy5Ukfdccgj3rwcCXT76W3mGySJijCvpq8hF1bY6MOQcZ5FeJ/E3w+1vPHqsEfHCS/TsfwPH5V5+Lpcy5kejg61nyspabe5wCf1rbhk3AYNcDY33lSAMa6mxvc4OeD0rynE9ZO5tuxAGOabG65JPWgNvQGopFOMn86EhlwMpHBps2GX6VRWRk4yTUnm7hgiquTYY+GOAM/WiKI7jkAfSngjuPxpycseaGA/fsGOKq3M23NSTk7c4/Csm+uRHnJqWUivqF3hD82K54WkurX0VnESXnkCDHv3/AZNTX92ZGKr0rv/hf4SEci6vfDa8qHyFYZKp/ex7/y+tb0KTnKxjXqqnFs73w3pq2dnBBGNqRoFUY7AYFSeIZcREZ4p/8AwkWm2szxhZyAdpkABBx7Vn6tcRXlv59vIJYScblOQD6H0Ne5CNtD5+Tbdzlb0ZzXzB8XXz491Bf7ixqP++RX1FdrnPpXyx8WWDfELV8fwui/+OCtJbEHIHBqCSLByBxU5pCMisWMqEYoqZ4vSo9uKQAKUEqaAO4oYgL8xpDJ0bcBzTqhgbd0HFTiqC43FIVp+KQUWC4wqfSmkVKaYRzQAwikzTiKbikIUGnIxQgqxUjoQcUyjNAF+PWryNQvmk47kA0VRzRTA0Xdm5JzTdoxmiitSRMYoyR0oooGRu5x1qB2PrRRWbGho5NLRRSGJVu2QbM0UUITJQeegp56UUVaAjkHtULdaKKQDlFTDoOKKKYj69+E8rz+AtEZzk/ZQPyzXa6ecSE+hooq2B1Fu2LYuRkgd6xNV0+01vRrsXcC4JKkLkZGKKKwn8LNIbo+cL2Fbe7lRCxEcjIMnsCa2NHndlUE96KK8WW59DDY6y1J2Dk1M/Siis0UR4B9vpSbcEjJoooARh7mpV+XGKKKRRFfEiEMCc1yeqSuSQTRRQIb4YtIb7XLKC4XfG0nzLn72ATg+3Fez3TG3tYFjO0zKC7Dqfb2FFFetgVozycweqMe9GxDt47VR0KZ4NXSFTmK4IjlQ8hgf6+9FFd5wk96gjlnjBJVGZRn0FfJfxJYt491sn/n4x/46KKKUtjPqc0aQUUVAxaidQVB70UUgI+lMjHmNlucUUVIFtVAXilooq0AYzRRRQAUxutFFJgMbrTT1oooGFFFFAgooooA/9k=" alt="Portrait of Abdullah Shahid" /></div>
+        <div class="portrait-frame"><img
+            src="data:image/jpeg;base64,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"
+            alt="Portrait of Abdullah Shahid" /></div>
         <div class="float-badge-exp"><span class="num">6</span><span class="label">Projects<br>Built</span></div>
-        <div class="float-badge-sparkle" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg></div>
-        <div class="float-badge-impact"><div class="title">Live on Streamlit Cloud</div><div class="metric">6 AI Apps</div>
-          <svg width="100%" height="26" viewBox="0 0 140 26" fill="none"><path d="M2 22 L28 18 L52 20 L80 12 L106 14 L138 3" stroke="#6384FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="float-badge-sparkle" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" />
+          </svg></div>
+        <div class="float-badge-impact">
+          <div class="title">Live on Streamlit Cloud</div>
+          <div class="metric">6 AI Apps</div>
+          <svg width="100%" height="26" viewBox="0 0 140 26" fill="none">
+            <path d="M2 22 L28 18 L52 20 L80 12 L106 14 L138 3" stroke="#6384FF" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
       </div>
     </section>
 
     <section id="about" class="section-block">
       <div class="about-top">
-        <div><span class="eyebrow">ABOUT ME</span><h2 class="section-title">Building AI Agents<br>That Do Real Work</h2></div>
-        <p class="about-desc">Software Engineering student with hands-on experience building and deploying AI agents, RAG (Retrieval-Augmented Generation) chatbots, and workflow automations. Skilled in Python, Machine Learning, Deep Learning, LangChain, LangGraph, Streamlit, Git and GitHub, and SEO. Seeking an AI Automation Internship to apply practical skills in AI agent development, automation workflows, and chatbot deployment.</p>
+        <div><span class="eyebrow">ABOUT ME</span>
+          <h2 class="section-title">Building AI Agents<br>That Do Real Work</h2>
+        </div>
+        <p class="about-desc">Software Engineering student with hands-on experience building and deploying AI agents,
+          RAG (Retrieval-Augmented Generation) chatbots, and workflow automations. Skilled in Python, Machine Learning,
+          Deep Learning, LangChain, LangGraph, Streamlit, Git and GitHub, and SEO. Seeking an AI Automation Internship
+          to apply practical skills in AI agent development, automation workflows, and chatbot deployment.</p>
       </div>
       <div class="about-bottom">
         <div class="stats-bar">
           <div class="stat-item"><span class="stat-value">6</span><span class="stat-label">Projects Built</span></div>
-          <div class="stat-item"><span class="stat-value">6</span><span class="stat-label">Live Streamlit Apps</span></div>
-          <div class="stat-item"><span class="stat-value">2</span><span class="stat-label">Automation Agents</span></div>
+          <div class="stat-item"><span class="stat-value">6</span><span class="stat-label">Live Streamlit Apps</span>
+          </div>
+          <div class="stat-item"><span class="stat-value">2</span><span class="stat-label">Automation Agents</span>
+          </div>
         </div>
-        <div class="about-cta-wrap"><a href="Abdullah_Shahid_CV.pdf" download class="btn-outline-pill">Download Full CV <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+        <div class="about-cta-wrap"><a href="Abdullah_Shahid_CV.pdf" download class="btn-outline-pill">Download Full CV
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg></a></div>
       </div>
       <p class="edu-note"><b>Education:</b> Bachelor of Science in Software Engineering (In Progress)</p>
     </section>
 
     <section id="services" class="section-block">
-      <div class="section-header"><span class="eyebrow">WHAT I DO</span><h2 class="section-title">Areas I Work In</h2></div>
-      <div class="services-grid"><article class="service-card"><div><div class="service-icon icon-amber"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M8 21h8M12 17v4"/></svg></div><h3>AI Agents &amp; RAG Chatbots</h3><p>Building and deploying AI agents and RAG chatbots that answer from your own documents.</p></div><div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></div></article><article class="service-card"><div><div class="service-icon icon-purple"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3>Workflow Automation</h3><p>WhatsApp Agent and RAG Agent automations that remove repetitive work.</p></div><div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></div></article><article class="service-card"><div><div class="service-icon icon-blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div><h3>ML &amp; Deep Learning</h3><p>Machine Learning and Deep Learning with Scikit-learn, TensorFlow and PyTorch.</p></div><div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></div></article><article class="service-card"><div><div class="service-icon icon-teal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Web, SEO &amp; Deployment</h3><p>Portfolio websites, SEO and project deployment via GitHub Pages and Streamlit Cloud.</p></div><div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></div></article></div>
+      <div class="section-header"><span class="eyebrow">WHAT I DO</span>
+        <h2 class="section-title">Areas I Work In</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-amber"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="13" rx="3" />
+                <path d="M8 21h8M12 17v4" />
+              </svg></div>
+            <h3>AI Agents &amp; RAG Chatbots</h3>
+            <p>Building and deploying AI agents and RAG chatbots that answer from your own documents.</p>
+          </div>
+          <div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg></div>
+        </article>
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-purple"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg></div>
+            <h3>Workflow Automation</h3>
+            <p>WhatsApp Agent and RAG Agent automations that remove repetitive work.</p>
+          </div>
+          <div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg></div>
+        </article>
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+              </svg></div>
+            <h3>ML &amp; Deep Learning</h3>
+            <p>Machine Learning and Deep Learning with Scikit-learn, TensorFlow and PyTorch.</p>
+          </div>
+          <div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg></div>
+        </article>
+        <article class="service-card">
+          <div>
+            <div class="service-icon icon-teal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+              </svg></div>
+            <h3>Web, SEO &amp; Deployment</h3>
+            <p>Portfolio websites, SEO and project deployment via GitHub Pages and Streamlit Cloud.</p>
+          </div>
+          <div class="card-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg></div>
+        </article>
+      </div>
     </section>
 
     <section id="skills" class="section-block">
-      <div class="section-header"><span class="eyebrow">TOOLS &amp; SKILLS</span><h2 class="section-title">Technologies I Use</h2></div>
-      <div class="tools-grid"><div class="tool-card"><div class="tool-badge" style="background:#fef3c7; color:#d97706; font-size:12px;">Py</div><span class="tool-name">Python</span></div><div class="tool-card"><div class="tool-badge" style="background:#dbeafe; color:#2563eb; font-size:12px;">Np</div><span class="tool-name">NumPy</span></div><div class="tool-card"><div class="tool-badge" style="background:#ede9fe; color:#7c3aed; font-size:12px;">Pd</div><span class="tool-name">Pandas</span></div><div class="tool-card"><div class="tool-badge" style="background:#ccfbf1; color:#0d9488; font-size:12px;">Mp</div><span class="tool-name">Matplotlib</span></div><div class="tool-card"><div class="tool-badge" style="background:#ffedd5; color:#ea580c; font-size:12px;">Sk</div><span class="tool-name">Scikit-learn</span></div><div class="tool-card"><div class="tool-badge" style="background:#fef3c7; color:#d97706; font-size:12px;">TF</div><span class="tool-name">TensorFlow</span></div><div class="tool-card"><div class="tool-badge" style="background:#fee2e2; color:#dc2626; font-size:12px;">Pt</div><span class="tool-name">PyTorch</span></div><div class="tool-card"><div class="tool-badge" style="background:#dcfce7; color:#16a34a; font-size:12px;">LC</div><span class="tool-name">LangChain</span></div><div class="tool-card"><div class="tool-badge" style="background:#ede9fe; color:#7c3aed; font-size:12px;">LG</div><span class="tool-name">LangGraph</span></div><div class="tool-card"><div class="tool-badge" style="background:#fee2e2; color:#e11d48; font-size:12px;">St</div><span class="tool-name">Streamlit</span></div><div class="tool-card"><div class="tool-badge" style="background:#ffedd5; color:#ea580c; font-size:12px;">Gt</div><span class="tool-name">Git</span></div><div class="tool-card"><div class="tool-badge" style="background:#11131a; color:#ffffff; font-size:12px;">GH</div><span class="tool-name">GitHub</span></div><div class="tool-card"><div class="tool-badge" style="background:#f4f5f7; color:#11131a; font-size:12px;">GP</div><span class="tool-name">GitHub Pages</span></div><div class="tool-card"><div class="tool-badge" style="background:#dbeafe; color:#2563eb; font-size:12px;">SC</div><span class="tool-name">Streamlit Cloud</span></div><div class="tool-card"><div class="tool-badge" style="background:#dcfce7; color:#16a34a; font-size:10px;">SEO</div><span class="tool-name">SEO</span></div><div class="tool-card"><div class="tool-badge" style="background:#f3e8ff; color:#9333ea; font-size:10px;">RAG</div><span class="tool-name">RAG</span></div></div>
+      <div class="section-header"><span class="eyebrow">TOOLS &amp; SKILLS</span>
+        <h2 class="section-title">Technologies I Use</h2>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#fef3c7; color:#d97706; font-size:12px;">Py</div><span
+            class="tool-name">Python</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#dbeafe; color:#2563eb; font-size:12px;">Np</div><span
+            class="tool-name">NumPy</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#ede9fe; color:#7c3aed; font-size:12px;">Pd</div><span
+            class="tool-name">Pandas</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#ccfbf1; color:#0d9488; font-size:12px;">Mp</div><span
+            class="tool-name">Matplotlib</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#ffedd5; color:#ea580c; font-size:12px;">Sk</div><span
+            class="tool-name">Scikit-learn</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#fef3c7; color:#d97706; font-size:12px;">TF</div><span
+            class="tool-name">TensorFlow</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#fee2e2; color:#dc2626; font-size:12px;">Pt</div><span
+            class="tool-name">PyTorch</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#dcfce7; color:#16a34a; font-size:12px;">LC</div><span
+            class="tool-name">LangChain</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#ede9fe; color:#7c3aed; font-size:12px;">LG</div><span
+            class="tool-name">LangGraph</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#fee2e2; color:#e11d48; font-size:12px;">St</div><span
+            class="tool-name">Streamlit</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#ffedd5; color:#ea580c; font-size:12px;">Gt</div><span
+            class="tool-name">Git</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#11131a; color:#ffffff; font-size:12px;">GH</div><span
+            class="tool-name">GitHub</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#f4f5f7; color:#11131a; font-size:12px;">GP</div><span
+            class="tool-name">GitHub Pages</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#dbeafe; color:#2563eb; font-size:12px;">SC</div><span
+            class="tool-name">Streamlit Cloud</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#dcfce7; color:#16a34a; font-size:10px;">SEO</div><span
+            class="tool-name">SEO</span>
+        </div>
+        <div class="tool-card">
+          <div class="tool-badge" style="background:#f3e8ff; color:#9333ea; font-size:10px;">RAG</div><span
+            class="tool-name">RAG</span>
+        </div>
+      </div>
     </section>
 
     <section id="work" class="section-block">
       <div class="section-header-flex">
-        <div><span class="eyebrow">PROJECTS</span><h2 class="section-title">Selected Work</h2></div>
-        <a href="https://github.com/1abdullahh" target="_blank" rel="noopener" class="btn-outline-pill">View GitHub <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+        <div><span class="eyebrow">PROJECTS</span>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+        <a href="https://github.com/1abdullahh" target="_blank" rel="noopener" class="btn-outline-pill">View GitHub <svg
+            width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17L17 7" />
+            <path d="M7 7h10v10" />
+          </svg></a>
       </div>
       <div class="projects-grid">
         <article class="project-card">
-          <div class="project-thumb"><div class="mini-browser"><div class="mini-browser-dots"><span></span><span></span><span></span></div><div class="mini-dash-grid"><div class="mini-panel"><div class="mini-bar accent"></div><div class="mini-bar short"></div><div class="mini-bar"></div></div><div class="mini-panel"><div class="mini-bar short"></div><div class="mini-box" style="background:#e8ecfb;"></div></div></div></div></div>
-          <p class="project-desc">AI research tool that passes any topic through a multi-step pipeline to produce authentic information.</p>
+          <div class="project-thumb">
+            <div class="mini-browser">
+              <div class="mini-browser-dots"><span></span><span></span><span></span></div>
+              <div class="mini-dash-grid">
+                <div class="mini-panel">
+                  <div class="mini-bar accent"></div>
+                  <div class="mini-bar short"></div>
+                  <div class="mini-bar"></div>
+                </div>
+                <div class="mini-panel">
+                  <div class="mini-bar short"></div>
+                  <div class="mini-box" style="background:#e8ecfb;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">AI research tool that passes any topic through a multi-step pipeline to produce
+            authentic information.</p>
           <div class="project-info">
-            <div><h3 class="project-title">Market Mind AI</h3><span class="project-cat">Research Pipeline</span><a class="project-url" href="https://market-mind-ai-1abdullahh.streamlit.app/" target="_blank" rel="noopener">market-mind-ai-1abdullahh.streamlit.app/</a></div>
-            <a href="https://market-mind-ai-1abdullahh.streamlit.app/" target="_blank" rel="noopener" class="project-link-btn" aria-label="Open Market Mind AI"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+            <div>
+              <h3 class="project-title">Market Mind AI</h3><span class="project-cat">Research Pipeline</span><a
+                class="project-url" href="https://market-mind-ai-1abdullahh.streamlit.app/" target="_blank"
+                rel="noopener">market-mind-ai-1abdullahh.streamlit.app/</a>
+            </div>
+            <a href="https://market-mind-ai-1abdullahh.streamlit.app/" target="_blank" rel="noopener"
+              class="project-link-btn" aria-label="Open Market Mind AI"><svg width="13" height="13" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg></a>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-thumb"><div class="mini-phone"><div class="mini-bar short"></div><div class="mini-bar accent"></div><div class="mini-box"></div><div class="mini-bar"></div></div><div class="mini-phone dark"><div class="mini-bar short"></div><div class="mini-box"></div><div class="mini-bar"></div></div><div class="mini-phone"><div class="mini-bar"></div><div class="mini-box"></div><div class="mini-bar short accent"></div></div></div>
+          <div class="project-thumb">
+            <div class="mini-phone">
+              <div class="mini-bar short"></div>
+              <div class="mini-bar accent"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone dark">
+              <div class="mini-bar short"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone">
+              <div class="mini-bar"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar short accent"></div>
+            </div>
+          </div>
           <p class="project-desc">Upload your own PDF and ask questions answered from the document content.</p>
           <div class="project-info">
-            <div><h3 class="project-title">RAG Chatbot</h3><span class="project-cat">PDF Question Answering</span><a class="project-url" href="https://ragchatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener">ragchatbot-1abdullahh.streamlit.app/</a></div>
-            <a href="https://ragchatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener" class="project-link-btn" aria-label="Open RAG Chatbot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+            <div>
+              <h3 class="project-title">RAG Chatbot</h3><span class="project-cat">PDF Question Answering</span><a
+                class="project-url" href="https://ragchatbot-1abdullahh.streamlit.app/" target="_blank"
+                rel="noopener">ragchatbot-1abdullahh.streamlit.app/</a>
+            </div>
+            <a href="https://ragchatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener"
+              class="project-link-btn" aria-label="Open RAG Chatbot"><svg width="13" height="13" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg></a>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-thumb"><div class="mini-browser"><div class="mini-browser-dots"><span></span><span></span><span></span></div><div class="mini-dash-grid"><div class="mini-panel"><div class="mini-bar accent"></div><div class="mini-bar short"></div><div class="mini-bar"></div></div><div class="mini-panel"><div class="mini-bar short"></div><div class="mini-box" style="background:#e8ecfb;"></div></div></div></div></div>
+          <div class="project-thumb">
+            <div class="mini-browser">
+              <div class="mini-browser-dots"><span></span><span></span><span></span></div>
+              <div class="mini-dash-grid">
+                <div class="mini-panel">
+                  <div class="mini-bar accent"></div>
+                  <div class="mini-bar short"></div>
+                  <div class="mini-bar"></div>
+                </div>
+                <div class="mini-panel">
+                  <div class="mini-bar short"></div>
+                  <div class="mini-box" style="background:#e8ecfb;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <p class="project-desc">AI-powered medical assistant, published on GitHub and deployed on Streamlit Cloud.</p>
           <div class="project-info">
-            <div><h3 class="project-title">AI Medical Assistant</h3><span class="project-cat">AI Assistant</span><a class="project-url" href="https://medical-ai-assistant-1abdullahh.streamlit.app" target="_blank" rel="noopener">medical-ai-assistant-1abdullahh.streamlit.app</a></div>
-            <a href="https://medical-ai-assistant-1abdullahh.streamlit.app" target="_blank" rel="noopener" class="project-link-btn" aria-label="Open AI Medical Assistant"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+            <div>
+              <h3 class="project-title">AI Medical Assistant</h3><span class="project-cat">AI Assistant</span><a
+                class="project-url" href="https://medical-ai-assistant-1abdullahh.streamlit.app" target="_blank"
+                rel="noopener">medical-ai-assistant-1abdullahh.streamlit.app</a>
+            </div>
+            <a href="https://medical-ai-assistant-1abdullahh.streamlit.app" target="_blank" rel="noopener"
+              class="project-link-btn" aria-label="Open AI Medical Assistant"><svg width="13" height="13"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg></a>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-thumb"><div class="mini-phone"><div class="mini-bar short"></div><div class="mini-bar accent"></div><div class="mini-box"></div><div class="mini-bar"></div></div><div class="mini-phone dark"><div class="mini-bar short"></div><div class="mini-box"></div><div class="mini-bar"></div></div><div class="mini-phone"><div class="mini-bar"></div><div class="mini-box"></div><div class="mini-bar short accent"></div></div></div>
+          <div class="project-thumb">
+            <div class="mini-phone">
+              <div class="mini-bar short"></div>
+              <div class="mini-bar accent"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone dark">
+              <div class="mini-bar short"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone">
+              <div class="mini-bar"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar short accent"></div>
+            </div>
+          </div>
           <p class="project-desc">AI finance project deployed on Streamlit Cloud using a Git and GitHub workflow.</p>
           <div class="project-info">
-            <div><h3 class="project-title">FinWise AI</h3><span class="project-cat">AI Finance</span><a class="project-url" href="https://finwiseai-1abdullahh.streamlit.app/" target="_blank" rel="noopener">finwiseai-1abdullahh.streamlit.app/</a></div>
-            <a href="https://finwiseai-1abdullahh.streamlit.app/" target="_blank" rel="noopener" class="project-link-btn" aria-label="Open FinWise AI"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+            <div>
+              <h3 class="project-title">FinWise AI</h3><span class="project-cat">AI Finance</span><a class="project-url"
+                href="https://finwiseai-1abdullahh.streamlit.app/" target="_blank"
+                rel="noopener">finwiseai-1abdullahh.streamlit.app/</a>
+            </div>
+            <a href="https://finwiseai-1abdullahh.streamlit.app/" target="_blank" rel="noopener"
+              class="project-link-btn" aria-label="Open FinWise AI"><svg width="13" height="13" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg></a>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-thumb"><div class="mini-browser"><div class="mini-browser-dots"><span></span><span></span><span></span></div><div class="mini-dash-grid"><div class="mini-panel"><div class="mini-bar accent"></div><div class="mini-bar short"></div><div class="mini-bar"></div></div><div class="mini-panel"><div class="mini-bar short"></div><div class="mini-box" style="background:#e8ecfb;"></div></div></div></div></div>
+          <div class="project-thumb">
+            <div class="mini-browser">
+              <div class="mini-browser-dots"><span></span><span></span><span></span></div>
+              <div class="mini-dash-grid">
+                <div class="mini-panel">
+                  <div class="mini-bar accent"></div>
+                  <div class="mini-bar short"></div>
+                  <div class="mini-bar"></div>
+                </div>
+                <div class="mini-panel">
+                  <div class="mini-bar short"></div>
+                  <div class="mini-box" style="background:#e8ecfb;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <p class="project-desc">Domain-restricted chatbot that answers only AI automation questions.</p>
           <div class="project-info">
-            <div><h3 class="project-title">AI Automation Chatbot</h3><span class="project-cat">Domain-Restricted Chatbot</span><a class="project-url" href="https://aiautomationchatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener">aiautomationchatbot-1abdullahh.streamlit.app/</a></div>
-            <a href="https://aiautomationchatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener" class="project-link-btn" aria-label="Open AI Automation Chatbot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+            <div>
+              <h3 class="project-title">AI Automation Chatbot</h3><span class="project-cat">Domain-Restricted
+                Chatbot</span><a class="project-url" href="https://aiautomationchatbot-1abdullahh.streamlit.app/"
+                target="_blank" rel="noopener">aiautomationchatbot-1abdullahh.streamlit.app/</a>
+            </div>
+            <a href="https://aiautomationchatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener"
+              class="project-link-btn" aria-label="Open AI Automation Chatbot"><svg width="13" height="13"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg></a>
           </div>
         </article>
         <article class="project-card">
-          <div class="project-thumb"><div class="mini-phone"><div class="mini-bar short"></div><div class="mini-bar accent"></div><div class="mini-box"></div><div class="mini-bar"></div></div><div class="mini-phone dark"><div class="mini-bar short"></div><div class="mini-box"></div><div class="mini-bar"></div></div><div class="mini-phone"><div class="mini-bar"></div><div class="mini-box"></div><div class="mini-bar short accent"></div></div></div>
+          <div class="project-thumb">
+            <div class="mini-phone">
+              <div class="mini-bar short"></div>
+              <div class="mini-bar accent"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone dark">
+              <div class="mini-bar short"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <div class="mini-phone">
+              <div class="mini-bar"></div>
+              <div class="mini-box"></div>
+              <div class="mini-bar short accent"></div>
+            </div>
+          </div>
           <p class="project-desc">Streamlit front-end chatbot pushed to GitHub and deployed on Streamlit Cloud.</p>
           <div class="project-info">
-            <div><h3 class="project-title">General AI Chatbot</h3><span class="project-cat">Streamlit Chatbot</span><a class="project-url" href="https://chatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener">chatbot-1abdullahh.streamlit.app/</a></div>
-            <a href="https://chatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener" class="project-link-btn" aria-label="Open General AI Chatbot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>
+            <div>
+              <h3 class="project-title">General AI Chatbot</h3><span class="project-cat">Streamlit Chatbot</span><a
+                class="project-url" href="https://chatbot-1abdullahh.streamlit.app/" target="_blank"
+                rel="noopener">chatbot-1abdullahh.streamlit.app/</a>
+            </div>
+            <a href="https://chatbot-1abdullahh.streamlit.app/" target="_blank" rel="noopener" class="project-link-btn"
+              aria-label="Open General AI Chatbot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg></a>
           </div>
         </article>
       </div>
@@ -1246,44 +1686,70 @@
           <span class="eyebrow">LET'S CONNECT</span>
           <h2 class="contact-heading">Looking for an AI automation intern?<br>Let's build something<br>together.</h2>
           <ul class="contact-info-list">
-            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span><a href="mailto:abdullahshahidqayyum@gmail.com">abdullahshahidqayyum@gmail.com</a></li>
-            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span><a href="https://linkedin.com/in/abdullah-shahid-qayyum" target="_blank" rel="noopener">linkedin.com/in/abdullah-shahid-qayyum</a></li>
-            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span><a href="https://github.com/1abdullahh" target="_blank" rel="noopener">github.com/1abdullahh</a></li>
-            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3 2.5 5.5 5.5 5.5l1.2-1.3-2-1-.8.7a3.5 3.5 0 0 1-1.6-1.6l.7-.8-1-2L9 8.5z"/></svg></span><a href="https://wa.me/923264217652" target="_blank" rel="noopener">WhatsApp: +92 3264217652</a></li>
+            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg></span><a href="mailto:abdullahshahidqayyum@gmail.com">abdullahshahidqayyum@gmail.com</a></li>
+            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg></span><a href="https://linkedin.com/in/abdullah-shahid-qayyum" target="_blank"
+                rel="noopener">linkedin.com/in/abdullah-shahid-qayyum</a></li>
+            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg></span><a href="https://github.com/1abdullahh" target="_blank"
+                rel="noopener">github.com/1abdullahh</a></li>
+            <li class="contact-info-item"><span class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z" />
+                  <path d="M9 8.5c0 3 2.5 5.5 5.5 5.5l1.2-1.3-2-1-.8.7a3.5 3.5 0 0 1-1.6-1.6l.7-.8-1-2L9 8.5z" />
+                </svg></span><a href="https://wa.me/923264217652" target="_blank" rel="noopener">WhatsApp: +92
+                3264217652</a></li>
           </ul>
           <p class="contact-copyright">© 2026 Abdullah Shahid. All rights reserved.</p>
         </div>
         <form class="contact-form-card" id="contactForm">
-          <div class="form-row-2"><input type="text" id="fName" class="form-field" placeholder="Your Name" required /><input type="email" id="fEmail" class="form-field" placeholder="Your Email" required /></div>
+          <div class="form-row-2"><input type="text" id="fName" class="form-field" placeholder="Your Name"
+              required /><input type="email" id="fEmail" class="form-field" placeholder="Your Email" required /></div>
           <div class="form-group"><select id="fTopic" class="form-field" required>
-            <option value="" disabled selected>What is it about?</option>
-            <option>AI Agent / Chatbot</option><option>Workflow Automation</option><option>Internship Opportunity</option><option>Other</option></select></div>
-          <div class="form-group"><textarea id="fMsg" class="form-field" placeholder="Your Message" required></textarea></div>
-          <button type="submit" class="btn-submit">Send Message <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+              <option value="" disabled selected>What is it about?</option>
+              <option>AI Agent / Chatbot</option>
+              <option>Workflow Automation</option>
+              <option>Internship Opportunity</option>
+              <option>Other</option>
+            </select></div>
+          <div class="form-group"><textarea id="fMsg" class="form-field" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message <svg width="14" height="14" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg></button>
           <div class="form-feedback" id="formFeedback">Opening your email app…</div>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><div class="footer-inner">
-    <div class="brand"><div class="brand-logo" style="width:28px; height:28px; font-size:13px;">A</div><span class="brand-name" style="font-size:13px;">Abdullah Shahid</span></div>
-  </div></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="brand">
+          <div class="brand-logo" style="width:28px; height:28px; font-size:13px;">A</div><span class="brand-name"
+            style="font-size:13px;">Abdullah Shahid</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(l => l.addEventListener('click', () => { navLinks.forEach(i => i.classList.remove('active')); l.classList.add('active'); }));
-    const form = document.getElementById('contactForm'), fb = document.getElementById('formFeedback');
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const v = id => document.getElementById(id).value;
-      const subject = encodeURIComponent(v('fTopic') + ' - ' + v('fName'));
-      const body = encodeURIComponent(v('fMsg') + '\n\nFrom: ' + v('fName') + ' (' + v('fEmail') + ')');
-      fb.style.display = 'block';
-      window.location.href = 'mailto:abdullahshahidqayyum@gmail.com?subject=' + subject + '&body=' + body;
-      setTimeout(() => { fb.style.display = 'none'; form.reset(); }, 4000);
-    });
-  
     // ================= SCROLL-BASED ANIMATION ENGINE =================
     (function () {
       const TOTAL_FRAMES = 192;
@@ -1416,5 +1882,49 @@
     })();
 
   </script>
+  <!-- Contact form -> Supabase (separate block so it can never break the animation) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    (function () {
+      try {
+        var SUPABASE_URL = 'sb_publishable_eVK1qou8kW7r_vXt4i_Maw_FHYTRRDD';
+        var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBjd3B3eWduc2RpenNiaG91YmVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ5MTg0NzksImV4cCI6MjExMDQ5NDQ3OX0.cxpWU8ojNRRQ5XMENORy8JMJm7S9wsCHQPxjkfMyn6c';
+
+        var contactForm = document.getElementById('contactForm');
+        var feedback = document.getElementById('formFeedback');
+        if (!contactForm || !feedback) return;
+        var submitBtn = contactForm.querySelector('button[type="submit"]');
+
+        contactForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          var val = function (id) { return document.getElementById(id).value.trim(); };
+          submitBtn.disabled = true;
+          feedback.textContent = 'Sending…';
+          feedback.style.display = 'block';
+
+          try {
+            var db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+            var res = await db.from('messages').insert({
+              name: val('fName'),
+              email: val('fEmail'),
+              subject: val('fTopic'),
+              message: val('fMsg')
+            });
+            if (res.error) throw res.error;
+            feedback.textContent = 'Message sent! Thank you.';
+            contactForm.reset();
+          } catch (err) {
+            console.error(err);
+            feedback.textContent = 'Something went wrong. Please try again or email me directly.';
+          }
+          submitBtn.disabled = false;
+          setTimeout(function () { feedback.style.display = 'none'; }, 5000);
+        });
+      } catch (err) {
+        console.error('Contact form setup failed:', err);
+      }
+    })();
+  </script>
 </body>
+
 </html>
